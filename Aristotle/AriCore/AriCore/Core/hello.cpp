@@ -1,15 +1,16 @@
 //
-//  Hello.cpp
+//  hello.cpp
 //  AriCore
 //
-//  Created by Eric Rao on 25/05/2018.
+//  Created by Eric Rao on 26/05/2018.
 //  Copyright © 2018 Eric Rao. All rights reserved.
 //
 
-#include "Hello.hpp"
+#include "hello.hpp"
+
 #include <iostream>
 
 void Hello::sayHello()
 {
-    return;
+    std::cout << "Hello World!" << std::endl;
 }

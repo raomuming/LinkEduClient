@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AriCore/AriCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Aristotle/Aristotle.xcodeproj">
    </FileRef>
 </Workspace>

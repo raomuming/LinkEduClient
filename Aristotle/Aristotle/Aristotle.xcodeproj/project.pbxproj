@@ -7,94 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A45755C920B84B0C00D26958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45755C820B84B0C00D26958 /* AppDelegate.swift */; };
-		A45755CB20B84B0C00D26958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45755CA20B84B0C00D26958 /* ViewController.swift */; };
-		A45755CE20B84B0C00D26958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45755CC20B84B0C00D26958 /* Main.storyboard */; };
-		A45755D120B84B0C00D26958 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A45755CF20B84B0C00D26958 /* Aristotle.xcdatamodeld */; };
-		A45755D320B84B0C00D26958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45755D220B84B0C00D26958 /* Assets.xcassets */; };
-		A45755D620B84B0C00D26958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45755D420B84B0C00D26958 /* LaunchScreen.storyboard */; };
-		A45755F920B84FE300D26958 /* libAriCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A45755F720B84FAE00D26958 /* libAriCore.a */; };
+		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
+		A4CA6B6620B88E2C00EBB3F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */; };
+		A4CA6B6920B88E2C00EBB3F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6720B88E2C00EBB3F7 /* Main.storyboard */; };
+		A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */; };
+		A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */; };
+		A4CA6B7120B88E2C00EBB3F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6F20B88E2C00EBB3F7 /* LaunchScreen.storyboard */; };
+		A4CA6B9020B88F7100EBB3F7 /* AriCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A45755F620B84FAE00D26958 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A45755F220B84FAD00D26958 /* AriCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A45755E620B84FAD00D26958;
-			remoteInfo = AriCore;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		A45755C520B84B0C00D26958 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A45755C820B84B0C00D26958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A45755CA20B84B0C00D26958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A45755CD20B84B0C00D26958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A45755D020B84B0C00D26958 /* Aristotle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aristotle.xcdatamodel; sourceTree = "<group>"; };
-		A45755D220B84B0C00D26958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A45755D520B84B0C00D26958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A45755D720B84B0C00D26958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A45755F220B84FAD00D26958 /* AriCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AriCore.xcodeproj; path = ../AriCore/AriCore.xcodeproj; sourceTree = "<group>"; };
-		A45755FB20B854B700D26958 /* Aristotle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aristotle-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4CA6B6820B88E2C00EBB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4CA6B6B20B88E2C00EBB3F7 /* Aristotle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aristotle.xcdatamodel; sourceTree = "<group>"; };
+		A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4CA6B7020B88E2C00EBB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4CA6B7220B88E2C00EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CA6B8D20B88EBA00EBB3F7 /* Aristotle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aristotle-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A45755C220B84B0C00D26958 /* Frameworks */ = {
+		A4CA6B5D20B88E2C00EBB3F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45755F920B84FE300D26958 /* libAriCore.a in Frameworks */,
+				A4CA6B9020B88F7100EBB3F7 /* AriCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A45755BC20B84B0C00D26958 = {
+		A4CA6B5720B88E2C00EBB3F7 = {
 			isa = PBXGroup;
 			children = (
-				A45755F220B84FAD00D26958 /* AriCore.xcodeproj */,
-				A45755C720B84B0C00D26958 /* Aristotle */,
-				A45755C620B84B0C00D26958 /* Products */,
-				A45755F820B84FE300D26958 /* Frameworks */,
+				A4CA6B6220B88E2C00EBB3F7 /* Aristotle */,
+				A4CA6B6120B88E2C00EBB3F7 /* Products */,
+				A4CA6B8E20B88F7100EBB3F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A45755C620B84B0C00D26958 /* Products */ = {
+		A4CA6B6120B88E2C00EBB3F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A45755C520B84B0C00D26958 /* Aristotle.app */,
+				A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A45755C720B84B0C00D26958 /* Aristotle */ = {
+		A4CA6B6220B88E2C00EBB3F7 /* Aristotle */ = {
 			isa = PBXGroup;
 			children = (
-				A45755C820B84B0C00D26958 /* AppDelegate.swift */,
-				A45755CA20B84B0C00D26958 /* ViewController.swift */,
-				A45755CC20B84B0C00D26958 /* Main.storyboard */,
-				A45755D220B84B0C00D26958 /* Assets.xcassets */,
-				A45755D420B84B0C00D26958 /* LaunchScreen.storyboard */,
-				A45755D720B84B0C00D26958 /* Info.plist */,
-				A45755CF20B84B0C00D26958 /* Aristotle.xcdatamodeld */,
-				A45755FB20B854B700D26958 /* Aristotle-Bridging-Header.h */,
+				A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */,
+				A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */,
+				A4CA6B6720B88E2C00EBB3F7 /* Main.storyboard */,
+				A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */,
+				A4CA6B6F20B88E2C00EBB3F7 /* LaunchScreen.storyboard */,
+				A4CA6B7220B88E2C00EBB3F7 /* Info.plist */,
+				A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */,
+				A4CA6B8D20B88EBA00EBB3F7 /* Aristotle-Bridging-Header.h */,
 			);
 			path = Aristotle;
 			sourceTree = "<group>";
 		};
-		A45755F320B84FAD00D26958 /* Products */ = {
+		A4CA6B8E20B88F7100EBB3F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A45755F720B84FAE00D26958 /* libAriCore.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A45755F820B84FE300D26958 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
+				A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,13 +84,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A45755C420B84B0C00D26958 /* Aristotle */ = {
+		A4CA6B5F20B88E2C00EBB3F7 /* Aristotle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A45755DA20B84B0C00D26958 /* Build configuration list for PBXNativeTarget "Aristotle" */;
+			buildConfigurationList = A4CA6B7520B88E2C00EBB3F7 /* Build configuration list for PBXNativeTarget "Aristotle" */;
 			buildPhases = (
-				A45755C120B84B0C00D26958 /* Sources */,
-				A45755C220B84B0C00D26958 /* Frameworks */,
-				A45755C320B84B0C00D26958 /* Resources */,
+				A4CA6B5C20B88E2C00EBB3F7 /* Sources */,
+				A4CA6B5D20B88E2C00EBB3F7 /* Frameworks */,
+				A4CA6B5E20B88E2C00EBB3F7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -116,25 +98,25 @@
 			);
 			name = Aristotle;
 			productName = Aristotle;
-			productReference = A45755C520B84B0C00D26958 /* Aristotle.app */;
+			productReference = A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A45755BD20B84B0C00D26958 /* Project object */ = {
+		A4CA6B5820B88E2C00EBB3F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Eric Rao";
 				TargetAttributes = {
-					A45755C420B84B0C00D26958 = {
+					A4CA6B5F20B88E2C00EBB3F7 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = A45755C020B84B0C00D26958 /* Build configuration list for PBXProject "Aristotle" */;
+			buildConfigurationList = A4CA6B5B20B88E2C00EBB3F7 /* Build configuration list for PBXProject "Aristotle" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,71 +124,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A45755BC20B84B0C00D26958;
-			productRefGroup = A45755C620B84B0C00D26958 /* Products */;
+			mainGroup = A4CA6B5720B88E2C00EBB3F7;
+			productRefGroup = A4CA6B6120B88E2C00EBB3F7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A45755F320B84FAD00D26958 /* Products */;
-					ProjectRef = A45755F220B84FAD00D26958 /* AriCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				A45755C420B84B0C00D26958 /* Aristotle */,
+				A4CA6B5F20B88E2C00EBB3F7 /* Aristotle */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		A45755F720B84FAE00D26958 /* libAriCore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAriCore.a;
-			remoteRef = A45755F620B84FAE00D26958 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		A45755C320B84B0C00D26958 /* Resources */ = {
+		A4CA6B5E20B88E2C00EBB3F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45755D620B84B0C00D26958 /* LaunchScreen.storyboard in Resources */,
-				A45755D320B84B0C00D26958 /* Assets.xcassets in Resources */,
-				A45755CE20B84B0C00D26958 /* Main.storyboard in Resources */,
+				A4CA6B7120B88E2C00EBB3F7 /* LaunchScreen.storyboard in Resources */,
+				A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */,
+				A4CA6B6920B88E2C00EBB3F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A45755C120B84B0C00D26958 /* Sources */ = {
+		A4CA6B5C20B88E2C00EBB3F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45755CB20B84B0C00D26958 /* ViewController.swift in Sources */,
-				A45755D120B84B0C00D26958 /* Aristotle.xcdatamodeld in Sources */,
-				A45755C920B84B0C00D26958 /* AppDelegate.swift in Sources */,
+				A4CA6B6620B88E2C00EBB3F7 /* ViewController.swift in Sources */,
+				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
+				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A45755CC20B84B0C00D26958 /* Main.storyboard */ = {
+		A4CA6B6720B88E2C00EBB3F7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A45755CD20B84B0C00D26958 /* Base */,
+				A4CA6B6820B88E2C00EBB3F7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A45755D420B84B0C00D26958 /* LaunchScreen.storyboard */ = {
+		A4CA6B6F20B88E2C00EBB3F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A45755D520B84B0C00D26958 /* Base */,
+				A4CA6B7020B88E2C00EBB3F7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -214,7 +180,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A45755D820B84B0C00D26958 /* Debug */ = {
+		A4CA6B7320B88E2C00EBB3F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,7 +240,7 @@
 			};
 			name = Debug;
 		};
-		A45755D920B84B0C00D26958 /* Release */ = {
+		A4CA6B7420B88E2C00EBB3F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,7 +294,7 @@
 			};
 			name = Release;
 		};
-		A45755DB20B84B0C00D26958 /* Debug */ = {
+		A4CA6B7620B88E2C00EBB3F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -348,7 +314,7 @@
 			};
 			name = Debug;
 		};
-		A45755DC20B84B0C00D26958 /* Release */ = {
+		A4CA6B7720B88E2C00EBB3F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -371,20 +337,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A45755C020B84B0C00D26958 /* Build configuration list for PBXProject "Aristotle" */ = {
+		A4CA6B5B20B88E2C00EBB3F7 /* Build configuration list for PBXProject "Aristotle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A45755D820B84B0C00D26958 /* Debug */,
-				A45755D920B84B0C00D26958 /* Release */,
+				A4CA6B7320B88E2C00EBB3F7 /* Debug */,
+				A4CA6B7420B88E2C00EBB3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A45755DA20B84B0C00D26958 /* Build configuration list for PBXNativeTarget "Aristotle" */ = {
+		A4CA6B7520B88E2C00EBB3F7 /* Build configuration list for PBXNativeTarget "Aristotle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A45755DB20B84B0C00D26958 /* Debug */,
-				A45755DC20B84B0C00D26958 /* Release */,
+				A4CA6B7620B88E2C00EBB3F7 /* Debug */,
+				A4CA6B7720B88E2C00EBB3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -392,17 +358,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A45755CF20B84B0C00D26958 /* Aristotle.xcdatamodeld */ = {
+		A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A45755D020B84B0C00D26958 /* Aristotle.xcdatamodel */,
+				A4CA6B6B20B88E2C00EBB3F7 /* Aristotle.xcdatamodel */,
 			);
-			currentVersion = A45755D020B84B0C00D26958 /* Aristotle.xcdatamodel */;
+			currentVersion = A4CA6B6B20B88E2C00EBB3F7 /* Aristotle.xcdatamodel */;
 			path = Aristotle.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = A45755BD20B84B0C00D26958 /* Project object */;
+	rootObject = A4CA6B5820B88E2C00EBB3F7 /* Project object */;
 }
