@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A45755EB20B84FAD00D26958 /* AriCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A45755EA20B84FAD00D26958 /* AriCore.m */; };
+		A45755EB20B84FAD00D26958 /* AriCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = A45755EA20B84FAD00D26958 /* AriCore.mm */; };
 		A45755EC20B84FAD00D26958 /* AriCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A45755E920B84FAD00D26958 /* AriCore.h */; };
+		A457560020B85DE600D26958 /* Hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A45755FE20B85DE600D26958 /* Hello.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +28,9 @@
 /* Begin PBXFileReference section */
 		A45755E620B84FAD00D26958 /* libAriCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAriCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45755E920B84FAD00D26958 /* AriCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AriCore.h; sourceTree = "<group>"; };
-		A45755EA20B84FAD00D26958 /* AriCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AriCore.m; sourceTree = "<group>"; };
+		A45755EA20B84FAD00D26958 /* AriCore.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AriCore.mm; sourceTree = "<group>"; };
+		A45755FE20B85DE600D26958 /* Hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hello.cpp; sourceTree = "<group>"; };
+		A45755FF20B85DE600D26958 /* Hello.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hello.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +63,20 @@
 		A45755E820B84FAD00D26958 /* AriCore */ = {
 			isa = PBXGroup;
 			children = (
+				A45755FD20B85DBD00D26958 /* Core */,
 				A45755E920B84FAD00D26958 /* AriCore.h */,
-				A45755EA20B84FAD00D26958 /* AriCore.m */,
+				A45755EA20B84FAD00D26958 /* AriCore.mm */,
 			);
 			path = AriCore;
+			sourceTree = "<group>";
+		};
+		A45755FD20B85DBD00D26958 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A45755FE20B85DE600D26958 /* Hello.cpp */,
+				A45755FF20B85DE600D26958 /* Hello.hpp */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45755EB20B84FAD00D26958 /* AriCore.m in Sources */,
+				A457560020B85DE600D26958 /* Hello.cpp in Sources */,
+				A45755EB20B84FAD00D26958 /* AriCore.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

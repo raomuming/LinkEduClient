@@ -7,11 +7,13 @@
 //
 
 #import "AriCore.h"
+#import "Core/Hello.hpp"
 
 @implementation AriCore
 
 -(void)sayHello {
-    NSLog(@"Hello World!");
+    //NSLog(@"Hello World!");
+    Hello::sayHello();
 }
 
 @end
