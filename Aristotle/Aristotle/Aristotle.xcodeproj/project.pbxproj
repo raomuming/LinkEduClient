@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
 		A4CA6B6620B88E2C00EBB3F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */; };
-		A4CA6B6920B88E2C00EBB3F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6720B88E2C00EBB3F7 /* Main.storyboard */; };
 		A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */; };
 		A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */; };
-		A4CA6B7120B88E2C00EBB3F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6F20B88E2C00EBB3F7 /* LaunchScreen.storyboard */; };
 		A4CA6B9020B88F7100EBB3F7 /* AriCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,10 +18,8 @@
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A4CA6B6820B88E2C00EBB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4CA6B6B20B88E2C00EBB3F7 /* Aristotle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aristotle.xcdatamodel; sourceTree = "<group>"; };
 		A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A4CA6B7020B88E2C00EBB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4CA6B7220B88E2C00EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CA6B8D20B88EBA00EBB3F7 /* Aristotle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aristotle-Bridging-Header.h"; sourceTree = "<group>"; };
 		A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,11 +57,10 @@
 		A4CA6B6220B88E2C00EBB3F7 /* Aristotle */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E3420B921D200EBB3F7 /* Login */,
 				A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */,
 				A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */,
-				A4CA6B6720B88E2C00EBB3F7 /* Main.storyboard */,
 				A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */,
-				A4CA6B6F20B88E2C00EBB3F7 /* LaunchScreen.storyboard */,
 				A4CA6B7220B88E2C00EBB3F7 /* Info.plist */,
 				A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */,
 				A4CA6B8D20B88EBA00EBB3F7 /* Aristotle-Bridging-Header.h */,
@@ -79,6 +74,13 @@
 				A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4CA6E3420B921D200EBB3F7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CA6B7120B88E2C00EBB3F7 /* LaunchScreen.storyboard in Resources */,
 				A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */,
-				A4CA6B6920B88E2C00EBB3F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,25 +159,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A4CA6B6720B88E2C00EBB3F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4CA6B6820B88E2C00EBB3F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A4CA6B6F20B88E2C00EBB3F7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4CA6B7020B88E2C00EBB3F7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A4CA6B7320B88E2C00EBB3F7 /* Debug */ = {
