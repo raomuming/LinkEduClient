@@ -12,6 +12,7 @@ class PhoneNumberLoginViewController : UIViewController {
     
     override func loadView() {
         super.loadView()
+        self.view.backgroundColor = UIColor.white
     }
     
     override func viewDidLoad() {

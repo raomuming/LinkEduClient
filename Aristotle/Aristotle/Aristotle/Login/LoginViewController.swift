@@ -50,7 +50,8 @@ class LoginViewController : UIViewController {
     }
     
     @objc func loginWithPhoneNumber() {
-        
+        let phoneNumberLoginViewController = PhoneNumberLoginViewController()
+        self.navigationController?.pushViewController(phoneNumberLoginViewController, animated: true)
     }
     
     fileprivate func initPhoneNumberSignupButton() {
