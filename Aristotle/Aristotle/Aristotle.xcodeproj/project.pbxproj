@@ -12,7 +12,22 @@
 		A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */; };
 		A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */; };
 		A4CA6B9020B88F7100EBB3F7 /* AriCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; };
+		A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */; };
+		A4CA6E3920B9B78300EBB3F7 /* AriCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4CA6E3820B9B77100EBB3F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4CA6E3920B9B78300EBB3F7 /* AriCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +38,7 @@
 		A4CA6B7220B88E2C00EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CA6B8D20B88EBA00EBB3F7 /* Aristotle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aristotle-Bridging-Header.h"; sourceTree = "<group>"; };
 		A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,7 @@
 		A4CA6E3420B921D200EBB3F7 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -93,6 +110,7 @@
 				A4CA6B5C20B88E2C00EBB3F7 /* Sources */,
 				A4CA6B5D20B88E2C00EBB3F7 /* Frameworks */,
 				A4CA6B5E20B88E2C00EBB3F7 /* Resources */,
+				A4CA6E3820B9B77100EBB3F7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -152,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
 				A4CA6B6620B88E2C00EBB3F7 /* ViewController.swift in Sources */,
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,
@@ -281,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMD5FWTLLL;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/../AriCore/AriCore";
 				INFOPLIST_FILE = Aristotle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMD5FWTLLL;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/../AriCore/AriCore";
 				INFOPLIST_FILE = Aristotle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

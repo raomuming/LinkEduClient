@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        /*
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
@@ -26,6 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let root = UINavigationController(rootViewController: viewController)
         root.navigationBar.isTranslucent = false
         window?.rootViewController = root
+        */
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        
+        if isLogin() {
+            
+        }
+        else {
+            self.setupLoginViewController()
+        }
+        self.window?.makeKeyAndVisible()
         
         return true
     }
@@ -99,5 +111,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    // Mark: - help function
+    func isLogin() -> Bool {
+        return false;
+    }
+    
+    func setupLoginViewController() {
+        let loginViewController = LoginViewController()
+        self.window?.rootViewController = UINavigationController(rootViewController: loginViewController)
+    }
 }
 
