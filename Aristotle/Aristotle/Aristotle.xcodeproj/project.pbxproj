@@ -14,6 +14,8 @@
 		A4CA6B9020B88F7100EBB3F7 /* AriCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; };
 		A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */; };
 		A4CA6E3920B9B78300EBB3F7 /* AriCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E3A20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift */; };
+		A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E3C20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,8 @@
 		A4CA6B8D20B88EBA00EBB3F7 /* Aristotle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aristotle-Bridging-Header.h"; sourceTree = "<group>"; };
 		A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A4CA6E3A20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberLoginViewController.swift; sourceTree = "<group>"; };
+		A4CA6E3C20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberSignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */,
+				A4CA6E3A20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift */,
+				A4CA6E3C20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */,
 				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
 				A4CA6B6620B88E2C00EBB3F7 /* ViewController.swift in Sources */,
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
+				A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
