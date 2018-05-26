@@ -7,10 +7,12 @@
 //
 
 #include "hello.hpp"
-
 #include <iostream>
+
+#include "Poco/Timezone.h"
 
 void Hello::sayHello()
 {
+    int offset = Poco::Timezone::utcOffset();
     std::cout << "Hello World!" << std::endl;
 }
