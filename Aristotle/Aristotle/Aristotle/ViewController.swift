@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let core = AriCore()
         core.sayHello()
+        NSLog("test log")
     }
 
     override func didReceiveMemoryWarning() {

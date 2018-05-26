@@ -13,15 +13,20 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var isLoggedIn: Bool = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeViewController = UIViewController()
-        homeViewController.view.backgroundColor = UIColor.red
-        window?.rootViewController = homeViewController
         window?.makeKeyAndVisible()
+        
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = UIColor.red
+        
+        let root = UINavigationController(rootViewController: viewController)
+        root.navigationBar.isTranslucent = false
+        window?.rootViewController = root
+        
         return true
     }
 
