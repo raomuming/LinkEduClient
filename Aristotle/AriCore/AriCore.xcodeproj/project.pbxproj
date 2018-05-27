@@ -25,6 +25,7 @@
 		A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E6920BA8BE200EBB3F7 /* AriServiceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E6D20BA8CB300EBB3F7 /* all.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4CA6E7020BA8DBE00EBB3F7 /* oc_unity_build.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E6F20BA8DBE00EBB3F7 /* oc_unity_build.mm */; };
+		A4CA6E7220BA942F00EBB3F7 /* libPocoNetSSLd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E7120BA942F00EBB3F7 /* libPocoNetSSLd.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		A4CA6E6920BA8BE200EBB3F7 /* AriServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriServiceFactory.h; path = AriCore/Objc/gen/AriServiceFactory.h; sourceTree = SOURCE_ROOT; };
 		A4CA6E6D20BA8CB300EBB3F7 /* all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all.h; sourceTree = "<group>"; };
 		A4CA6E6F20BA8DBE00EBB3F7 /* oc_unity_build.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = oc_unity_build.mm; sourceTree = "<group>"; };
+		A4CA6E7120BA942F00EBB3F7 /* libPocoNetSSLd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNetSSLd.a; path = "third-party/libs/debug/libPocoNetSSLd.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA6E7220BA942F00EBB3F7 /* libPocoNetSSLd.a in Frameworks */,
 				A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +110,7 @@
 		A4CA6E3120B91C4800EBB3F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E7120BA942F00EBB3F7 /* libPocoNetSSLd.a */,
 				A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */,
 			);
 			name = Frameworks;

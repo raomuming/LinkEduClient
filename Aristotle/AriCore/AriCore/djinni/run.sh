@@ -75,5 +75,3 @@ do
  	 	echo $IMPORT`basename "$filename"`$DOBULE_QUOTE >> $OBJC_OUTPUT_FOLDER/all.h;
 	fi
 done
-
-echo "#import \"rcv_all.h\"" >> $OBJC_OUTPUT_FOLDER/all.h;
