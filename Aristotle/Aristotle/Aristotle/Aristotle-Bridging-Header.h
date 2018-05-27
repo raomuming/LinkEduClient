@@ -7,3 +7,5 @@
 //
 
 #import "AriCore.h"
+
+#import "Objc/all.h"

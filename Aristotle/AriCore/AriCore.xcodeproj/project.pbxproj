@@ -12,6 +12,19 @@
 		A4CA6B9620B891C400EBB3F7 /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B9420B891C400EBB3F7 /* hello.cpp */; };
 		A4CA6B9720B891C400EBB3F7 /* hello.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6B9520B891C400EBB3F7 /* hello.hpp */; };
 		A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */; };
+		A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */; };
+		A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */; };
+		A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4C20BA818300EBB3F7 /* DJIError.h */; };
+		A4CA6E5320BA818300EBB3F7 /* DJICppWrapperCache+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4D20BA818300EBB3F7 /* DJICppWrapperCache+Private.h */; };
+		A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4E20BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h */; };
+		A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E4F20BA818300EBB3F7 /* DJIProxyCaches.mm */; };
+		A4CA6E5920BA84DB00EBB3F7 /* service_factory_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E5720BA84DB00EBB3F7 /* service_factory_impl.cpp */; };
+		A4CA6E5A20BA84DB00EBB3F7 /* service_factory_impl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E5820BA84DB00EBB3F7 /* service_factory_impl.hpp */; };
+		A4CA6E5F20BA8A4E00EBB3F7 /* service_factory.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E5E20BA8A4E00EBB3F7 /* service_factory.hpp */; };
+		A4CA6E6B20BA8BE200EBB3F7 /* AriServiceFactory+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E6820BA8BE200EBB3F7 /* AriServiceFactory+Private.h */; };
+		A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E6920BA8BE200EBB3F7 /* AriServiceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E6D20BA8CB300EBB3F7 /* all.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4CA6E7020BA8DBE00EBB3F7 /* oc_unity_build.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E6F20BA8DBE00EBB3F7 /* oc_unity_build.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +35,20 @@
 		A4CA6B9420B891C400EBB3F7 /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
 		A4CA6B9520B891C400EBB3F7 /* hello.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hello.hpp; sourceTree = "<group>"; };
 		A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundationd.a; path = "third-party/libs/debug/libPocoFoundationd.a"; sourceTree = "<group>"; };
+		A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIError.mm; path = "tools/djinni/support-lib/objc/DJIError.mm"; sourceTree = SOURCE_ROOT; };
+		A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIMarshal+Private.h"; path = "tools/djinni/support-lib/objc/DJIMarshal+Private.h"; sourceTree = SOURCE_ROOT; };
+		A4CA6E4C20BA818300EBB3F7 /* DJIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJIError.h; path = "tools/djinni/support-lib/objc/DJIError.h"; sourceTree = SOURCE_ROOT; };
+		A4CA6E4D20BA818300EBB3F7 /* DJICppWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJICppWrapperCache+Private.h"; path = "tools/djinni/support-lib/objc/DJICppWrapperCache+Private.h"; sourceTree = SOURCE_ROOT; };
+		A4CA6E4E20BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIObjcWrapperCache+Private.h"; path = "tools/djinni/support-lib/objc/DJIObjcWrapperCache+Private.h"; sourceTree = SOURCE_ROOT; };
+		A4CA6E4F20BA818300EBB3F7 /* DJIProxyCaches.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIProxyCaches.mm; path = "tools/djinni/support-lib/objc/DJIProxyCaches.mm"; sourceTree = SOURCE_ROOT; };
+		A4CA6E5720BA84DB00EBB3F7 /* service_factory_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = service_factory_impl.cpp; sourceTree = "<group>"; };
+		A4CA6E5820BA84DB00EBB3F7 /* service_factory_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = service_factory_impl.hpp; sourceTree = "<group>"; };
+		A4CA6E5E20BA8A4E00EBB3F7 /* service_factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = service_factory.hpp; path = AriCore/Api/gen/service_factory.hpp; sourceTree = SOURCE_ROOT; };
+		A4CA6E6720BA8BE200EBB3F7 /* AriServiceFactory+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriServiceFactory+Private.mm"; path = "AriCore/Objc/gen/AriServiceFactory+Private.mm"; sourceTree = SOURCE_ROOT; };
+		A4CA6E6820BA8BE200EBB3F7 /* AriServiceFactory+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriServiceFactory+Private.h"; path = "AriCore/Objc/gen/AriServiceFactory+Private.h"; sourceTree = SOURCE_ROOT; };
+		A4CA6E6920BA8BE200EBB3F7 /* AriServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriServiceFactory.h; path = AriCore/Objc/gen/AriServiceFactory.h; sourceTree = SOURCE_ROOT; };
+		A4CA6E6D20BA8CB300EBB3F7 /* all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all.h; sourceTree = "<group>"; };
+		A4CA6E6F20BA8DBE00EBB3F7 /* oc_unity_build.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = oc_unity_build.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				A4CA6E3F20BA741000EBB3F7 /* Api */,
+				A4CA6E4220BA806C00EBB3F7 /* Objc */,
 				A4CA6B9120B8905C00EBB3F7 /* Core */,
 				A4CA6B8520B88E5300EBB3F7 /* AriCore.h */,
 				A4CA6B9220B8910E00EBB3F7 /* AriCore.mm */,
+				A4CA6E6F20BA8DBE00EBB3F7 /* oc_unity_build.mm */,
 				A4CA6B8620B88E5300EBB3F7 /* Info.plist */,
 			);
 			path = AriCore;
@@ -68,6 +97,7 @@
 		A4CA6B9120B8905C00EBB3F7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E5620BA847D00EBB3F7 /* Impl */,
 				A4CA6B9420B891C400EBB3F7 /* hello.cpp */,
 				A4CA6B9520B891C400EBB3F7 /* hello.hpp */,
 			);
@@ -85,8 +115,61 @@
 		A4CA6E3F20BA741000EBB3F7 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E5B20BA875E00EBB3F7 /* gen */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		A4CA6E4220BA806C00EBB3F7 /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				A4CA6E6D20BA8CB300EBB3F7 /* all.h */,
+				A4CA6E6620BA8BC600EBB3F7 /* gen */,
+				A4CA6E4920BA814800EBB3F7 /* support */,
+			);
+			path = Objc;
+			sourceTree = "<group>";
+		};
+		A4CA6E4920BA814800EBB3F7 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				A4CA6E4D20BA818300EBB3F7 /* DJICppWrapperCache+Private.h */,
+				A4CA6E4C20BA818300EBB3F7 /* DJIError.h */,
+				A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */,
+				A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */,
+				A4CA6E4E20BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h */,
+				A4CA6E4F20BA818300EBB3F7 /* DJIProxyCaches.mm */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		A4CA6E5620BA847D00EBB3F7 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				A4CA6E5720BA84DB00EBB3F7 /* service_factory_impl.cpp */,
+				A4CA6E5820BA84DB00EBB3F7 /* service_factory_impl.hpp */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		A4CA6E5B20BA875E00EBB3F7 /* gen */ = {
+			isa = PBXGroup;
+			children = (
+				A4CA6E5E20BA8A4E00EBB3F7 /* service_factory.hpp */,
+			);
+			name = gen;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A4CA6E6620BA8BC600EBB3F7 /* gen */ = {
+			isa = PBXGroup;
+			children = (
+				A4CA6E6920BA8BE200EBB3F7 /* AriServiceFactory.h */,
+				A4CA6E6820BA8BE200EBB3F7 /* AriServiceFactory+Private.h */,
+				A4CA6E6720BA8BE200EBB3F7 /* AriServiceFactory+Private.mm */,
+			);
+			name = gen;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,8 +179,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */,
+				A4CA6E6B20BA8BE200EBB3F7 /* AriServiceFactory+Private.h in Headers */,
 				A4CA6B8720B88E5300EBB3F7 /* AriCore.h in Headers */,
+				A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */,
+				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
+				A4CA6E5A20BA84DB00EBB3F7 /* service_factory_impl.hpp in Headers */,
+				A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */,
 				A4CA6B9720B891C400EBB3F7 /* hello.hpp in Headers */,
+				A4CA6E5F20BA8A4E00EBB3F7 /* service_factory.hpp in Headers */,
+				A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */,
+				A4CA6E5320BA818300EBB3F7 /* DJICppWrapperCache+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA6E7020BA8DBE00EBB3F7 /* oc_unity_build.mm in Sources */,
+				A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */,
+				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
+				A4CA6E5920BA84DB00EBB3F7 /* service_factory_impl.cpp in Sources */,
 				A4CA6B9620B891C400EBB3F7 /* hello.cpp in Sources */,
 				A4CA6B9320B8910E00EBB3F7 /* AriCore.mm in Sources */,
 			);
@@ -302,7 +398,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "${SRCROOT}/third-party/include";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/third-party/include",
+					"${SRCROOT}/AriCore/Objc/gen",
+				);
 				INFOPLIST_FILE = AriCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,7 +430,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "${SRCROOT}/third-party/include";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/third-party/include",
+					"${SRCROOT}/AriCore/Objc/gen",
+				);
 				INFOPLIST_FILE = AriCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

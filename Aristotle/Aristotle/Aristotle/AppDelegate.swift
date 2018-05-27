@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         self.window?.makeKeyAndVisible()
         
+        let hello = AriServiceFactory.hello()
+        NSLog("Test", hello);
         return true
     }
 

@@ -1,0 +1,5 @@
+
+
+service_factory = interface + c {
+	static hello(): string;
+}

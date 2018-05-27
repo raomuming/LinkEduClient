@@ -309,7 +309,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMD5FWTLLL;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/../AriCore/AriCore";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../AriCore/AriCore",
+					"${SRCROOT}/../AriCore/AriCore/Objc",
+					"${SRCROOT}/../AriCore/AriCore/Objc/gen",
+				);
 				INFOPLIST_FILE = Aristotle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,7 +334,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMD5FWTLLL;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/../AriCore/AriCore";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../AriCore/AriCore",
+					"${SRCROOT}/../AriCore/AriCore/Objc",
+					"${SRCROOT}/../AriCore/AriCore/Objc/gen",
+				);
 				INFOPLIST_FILE = Aristotle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
