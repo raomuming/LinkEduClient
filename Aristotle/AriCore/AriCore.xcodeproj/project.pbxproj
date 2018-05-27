@@ -25,6 +25,8 @@
 		A4CA6E7C20BAA4CF00EBB3F7 /* AriIAccountService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E7920BAA4CF00EBB3F7 /* AriIAccountService+Private.h */; };
 		A4CA6E7D20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E7A20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm */; };
 		A4CA6E7E20BAA4CF00EBB3F7 /* AriIAccountService.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E7B20BAA4CF00EBB3F7 /* AriIAccountService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4CA6E8220BAAC1900EBB3F7 /* account_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E8020BAAC1900EBB3F7 /* account_service.cpp */; };
+		A4CA6E8320BAAC1900EBB3F7 /* account_service.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E8120BAAC1900EBB3F7 /* account_service.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		A4CA6E7920BAA4CF00EBB3F7 /* AriIAccountService+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriIAccountService+Private.h"; path = "AriCore/Objc/gen/AriIAccountService+Private.h"; sourceTree = SOURCE_ROOT; };
 		A4CA6E7A20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriIAccountService+Private.mm"; path = "AriCore/Objc/gen/AriIAccountService+Private.mm"; sourceTree = SOURCE_ROOT; };
 		A4CA6E7B20BAA4CF00EBB3F7 /* AriIAccountService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriIAccountService.h; path = AriCore/Objc/gen/AriIAccountService.h; sourceTree = SOURCE_ROOT; };
+		A4CA6E8020BAAC1900EBB3F7 /* account_service.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = account_service.cpp; sourceTree = "<group>"; };
+		A4CA6E8120BAAC1900EBB3F7 /* account_service.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = account_service.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 		A4CA6E7F20BAA5A200EBB3F7 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E8020BAAC1900EBB3F7 /* account_service.cpp */,
+				A4CA6E8120BAAC1900EBB3F7 /* account_service.hpp */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 				A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */,
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
 				A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */,
+				A4CA6E8320BAAC1900EBB3F7 /* account_service.hpp in Headers */,
 				A4CA6E7C20BAA4CF00EBB3F7 /* AriIAccountService+Private.h in Headers */,
 				A4CA6E7820BAA4A500EBB3F7 /* i_account_service.hpp in Headers */,
 				A4CA6E5F20BA8A4E00EBB3F7 /* service_factory.hpp in Headers */,
@@ -270,6 +277,7 @@
 				A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */,
 				A4CA6E7D20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm in Sources */,
 				A4CA6E7320BA989900EBB3F7 /* AriServiceFactory+Private.mm in Sources */,
+				A4CA6E8220BAAC1900EBB3F7 /* account_service.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
 			);
