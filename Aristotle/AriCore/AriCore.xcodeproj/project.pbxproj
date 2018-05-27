@@ -27,6 +27,8 @@
 		A4CA6E7E20BAA4CF00EBB3F7 /* AriIAccountService.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E7B20BAA4CF00EBB3F7 /* AriIAccountService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4CA6E8220BAAC1900EBB3F7 /* account_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E8020BAAC1900EBB3F7 /* account_service.cpp */; };
 		A4CA6E8320BAAC1900EBB3F7 /* account_service.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E8120BAAC1900EBB3F7 /* account_service.hpp */; };
+		A4CA6E8620BAF06700EBB3F7 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E8420BAF06700EBB3F7 /* libcrypto.a */; };
+		A4CA6E8720BAF06700EBB3F7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E8520BAF06700EBB3F7 /* libssl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		A4CA6E7B20BAA4CF00EBB3F7 /* AriIAccountService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriIAccountService.h; path = AriCore/Objc/gen/AriIAccountService.h; sourceTree = SOURCE_ROOT; };
 		A4CA6E8020BAAC1900EBB3F7 /* account_service.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = account_service.cpp; sourceTree = "<group>"; };
 		A4CA6E8120BAAC1900EBB3F7 /* account_service.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = account_service.hpp; sourceTree = "<group>"; };
+		A4CA6E8420BAF06700EBB3F7 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "third-party/libs/debug/libcrypto.a"; sourceTree = "<group>"; };
+		A4CA6E8520BAF06700EBB3F7 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "third-party/libs/debug/libssl.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA6E8620BAF06700EBB3F7 /* libcrypto.a in Frameworks */,
+				A4CA6E8720BAF06700EBB3F7 /* libssl.a in Frameworks */,
 				A4CA6E7220BA942F00EBB3F7 /* libPocoNetSSLd.a in Frameworks */,
 				A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */,
 			);
@@ -106,6 +112,8 @@
 		A4CA6E3120B91C4800EBB3F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E8420BAF06700EBB3F7 /* libcrypto.a */,
+				A4CA6E8520BAF06700EBB3F7 /* libssl.a */,
 				A4CA6E7120BA942F00EBB3F7 /* libPocoNetSSLd.a */,
 				A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */,
 			);
