@@ -6,6 +6,4 @@
 //  Copyright © 2018 Eric Rao. All rights reserved.
 //
 
-#import "AriCore.h"
-
 #import "Objc/all.h"

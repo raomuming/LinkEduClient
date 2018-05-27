@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
-		A4CA6B6620B88E2C00EBB3F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */; };
 		A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */; };
 		A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */; };
 		A4CA6B9020B88F7100EBB3F7 /* AriCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4CA6B6B20B88E2C00EBB3F7 /* Aristotle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aristotle.xcdatamodel; sourceTree = "<group>"; };
 		A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4CA6B7220B88E2C00EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			children = (
 				A4CA6E3420B921D200EBB3F7 /* Login */,
 				A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */,
-				A4CA6B6520B88E2C00EBB3F7 /* ViewController.swift */,
 				A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */,
 				A4CA6B7220B88E2C00EBB3F7 /* Info.plist */,
 				A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */,
@@ -178,7 +175,6 @@
 			files = (
 				A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */,
 				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
-				A4CA6B6620B88E2C00EBB3F7 /* ViewController.swift in Sources */,
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
 				A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,

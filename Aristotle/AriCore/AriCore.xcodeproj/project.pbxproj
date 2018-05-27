@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4CA6B8720B88E5300EBB3F7 /* AriCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6B8520B88E5300EBB3F7 /* AriCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4CA6B9320B8910E00EBB3F7 /* AriCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B9220B8910E00EBB3F7 /* AriCore.mm */; };
-		A4CA6B9620B891C400EBB3F7 /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B9420B891C400EBB3F7 /* hello.cpp */; };
-		A4CA6B9720B891C400EBB3F7 /* hello.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6B9520B891C400EBB3F7 /* hello.hpp */; };
 		A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */; };
 		A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */; };
 		A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */; };
@@ -33,11 +29,7 @@
 
 /* Begin PBXFileReference section */
 		A4CA6B8220B88E5300EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4CA6B8520B88E5300EBB3F7 /* AriCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AriCore.h; sourceTree = "<group>"; };
 		A4CA6B8620B88E5300EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4CA6B9220B8910E00EBB3F7 /* AriCore.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AriCore.mm; sourceTree = "<group>"; };
-		A4CA6B9420B891C400EBB3F7 /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
-		A4CA6B9520B891C400EBB3F7 /* hello.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hello.hpp; sourceTree = "<group>"; };
 		A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundationd.a; path = "third-party/libs/debug/libPocoFoundationd.a"; sourceTree = "<group>"; };
 		A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIError.mm; path = "tools/djinni/support-lib/objc/DJIError.mm"; sourceTree = SOURCE_ROOT; };
 		A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIMarshal+Private.h"; path = "tools/djinni/support-lib/objc/DJIMarshal+Private.h"; sourceTree = SOURCE_ROOT; };
@@ -94,8 +86,6 @@
 				A4CA6E3F20BA741000EBB3F7 /* Api */,
 				A4CA6E4220BA806C00EBB3F7 /* Objc */,
 				A4CA6B9120B8905C00EBB3F7 /* Core */,
-				A4CA6B8520B88E5300EBB3F7 /* AriCore.h */,
-				A4CA6B9220B8910E00EBB3F7 /* AriCore.mm */,
 				A4CA6B8620B88E5300EBB3F7 /* Info.plist */,
 			);
 			path = AriCore;
@@ -105,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				A4CA6E7F20BAA5A200EBB3F7 /* service */,
-				A4CA6B9420B891C400EBB3F7 /* hello.cpp */,
-				A4CA6B9520B891C400EBB3F7 /* hello.hpp */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -201,11 +189,9 @@
 				A4CA6E7E20BAA4CF00EBB3F7 /* AriIAccountService.h in Headers */,
 				A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */,
 				A4CA6E6B20BA8BE200EBB3F7 /* AriServiceFactory+Private.h in Headers */,
-				A4CA6B8720B88E5300EBB3F7 /* AriCore.h in Headers */,
 				A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */,
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
 				A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */,
-				A4CA6B9720B891C400EBB3F7 /* hello.hpp in Headers */,
 				A4CA6E7C20BAA4CF00EBB3F7 /* AriIAccountService+Private.h in Headers */,
 				A4CA6E7820BAA4A500EBB3F7 /* i_account_service.hpp in Headers */,
 				A4CA6E5F20BA8A4E00EBB3F7 /* service_factory.hpp in Headers */,
@@ -286,8 +272,6 @@
 				A4CA6E7320BA989900EBB3F7 /* AriServiceFactory+Private.mm in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
-				A4CA6B9620B891C400EBB3F7 /* hello.cpp in Sources */,
-				A4CA6B9320B8910E00EBB3F7 /* AriCore.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
