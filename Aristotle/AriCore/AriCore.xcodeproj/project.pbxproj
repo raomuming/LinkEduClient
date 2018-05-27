@@ -56,6 +56,7 @@
 		A4CA6B8420B88E5300EBB3F7 /* AriCore */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA6E3F20BA741000EBB3F7 /* Api */,
 				A4CA6B9120B8905C00EBB3F7 /* Core */,
 				A4CA6B8520B88E5300EBB3F7 /* AriCore.h */,
 				A4CA6B9220B8910E00EBB3F7 /* AriCore.mm */,
@@ -79,6 +80,13 @@
 				A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4CA6E3F20BA741000EBB3F7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

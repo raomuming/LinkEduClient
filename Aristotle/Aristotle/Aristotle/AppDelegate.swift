@@ -16,18 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var isLoggedIn: Bool = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        /*
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = UIColor.red
-        
-        let root = UINavigationController(rootViewController: viewController)
-        root.navigationBar.isTranslucent = false
-        window?.rootViewController = root
-        */
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         
