@@ -55,13 +55,8 @@ rm -rf "$PROJECT_DIR/temp"
 echo "remove all.h......"
 rm -rf "$OBJC_OUTPUT_FOLDER/all.h"
 
-echo "export to build.mm......"
 IMPORT="#import \""
 DOBULE_QUOTE="\"" 
-for filename in $OBJC_OUTPUT_FOLDER/gen/*.mm
-do
-    echo $IMPORT`basename "$filename"`$DOBULE_QUOTE >> $OBJC_OUTPUT_FOLDER/gen/oc_unity_build.mm
-done
 
 echo "export to all.h......"
 
