@@ -3,15 +3,17 @@
 
 #pragma once
 
-#include <string>
+#include <memory>
 
 namespace ari {
+
+class IAccountService;
 
 class ServiceFactory {
 public:
     virtual ~ServiceFactory() {}
 
-    static std::string hello();
+    static std::shared_ptr<IAccountService> accountService();
 };
 
 }  // namespace ari

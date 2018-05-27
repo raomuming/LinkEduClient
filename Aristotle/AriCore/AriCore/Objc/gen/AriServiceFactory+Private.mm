@@ -3,9 +3,9 @@
 
 #import "AriServiceFactory+Private.h"
 #import "AriServiceFactory.h"
+#import "AriIAccountService+Private.h"
 #import "DJICppWrapperCache+Private.h"
 #import "DJIError.h"
-#import "DJIMarshal+Private.h"
 #include <exception>
 #include <stdexcept>
 #include <utility>
@@ -30,10 +30,10 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     return self;
 }
 
-+ (nonnull NSString *)hello {
++ (nullable AriIAccountService *)accountService {
     try {
-        auto objcpp_result_ = ::ari::ServiceFactory::hello();
-        return ::djinni::String::fromCpp(objcpp_result_);
+        auto objcpp_result_ = ::ari::ServiceFactory::accountService();
+        return ::djinni_generated::IAccountService::fromCpp(objcpp_result_);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

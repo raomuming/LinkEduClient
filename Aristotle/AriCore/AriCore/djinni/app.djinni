@@ -1,5 +1,6 @@
 
+@import "./account.djinni"
 
 service_factory = interface + c {
-	static hello(): string;
+	static accountService(): i_account_service;
 }

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         
-        if isLogin() {
+        if isLoggedin() {
             
         }
         else {
@@ -27,8 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         self.window?.makeKeyAndVisible()
         
-        let hello = AriServiceFactory.hello()
-        NSLog("Test", hello);
         return true
     }
 
@@ -102,8 +100,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // Mark: - help function
-    func isLogin() -> Bool {
-        return false;
+    func isLoggedin() -> Bool {
+        if let accountService = AriServiceFactory.accountService() {
+            return accountService.isLoggedIn()
+        }
+        return false
     }
     
     func setupLoginViewController() {
