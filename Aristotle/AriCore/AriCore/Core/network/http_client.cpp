@@ -37,7 +37,7 @@ namespace ari {
     }
     
     // this refer to twitter example.
-    Poco::AutoPtr<Poco::Util::AbstractConfiguration> HTTPClient::doRequest()
+    Poco::Net::HTTPResponse::HTTPStatus HTTPClient::doRequest(Poco::AutoPtr<Poco::Util::AbstractConfiguration>& pResult)
     {
         // TODO: need the full path of the request
         Poco::URI uri("");
@@ -52,11 +52,11 @@ namespace ari {
         
         session.sendRequest(req) << str;
         
-        Poco::Net::HTTPResponse resp;
-        std::istream& rs = session.receiveResponse(resp);
+        Poco::Net::HTTPResponse res;
+        std::istream& rs = session.receiveResponse(res);
         
-        Poco::AutoPtr<Poco::Util::JSONConfiguration> pResult = new Poco::Util::JSONConfiguration(rs);
+        pResult = new Poco::Util::JSONConfiguration(rs);
         
-        return pResult;
+        return res.getStatus();
     }
 }

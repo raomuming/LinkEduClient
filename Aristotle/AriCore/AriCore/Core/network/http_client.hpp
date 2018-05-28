@@ -13,6 +13,7 @@
 #include "Poco/Runnable.h"
 #include "Poco/Util/AbstractConfiguration.h"
 #include "Poco/AutoPtr.h"
+#include "Poco/Net/HTTPResponse.h"
 
 using Poco::Notification;
 using Poco::NotificationQueue;
@@ -25,7 +26,7 @@ namespace ari {
         void run() override;
       
     private:
-        Poco::AutoPtr<Poco::Util::AbstractConfiguration> doRequest();
+        Poco::Net::HTTPResponse::HTTPStatus doRequest(Poco::AutoPtr<Poco::Util::AbstractConfiguration>& pResult);
         
     private:
         std::string _name;
