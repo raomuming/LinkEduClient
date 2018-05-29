@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40EDD7620BD91990057A585 /* network_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40EDD7420BD91990057A585 /* network_manager.cpp */; };
+		A40EDD7720BD91990057A585 /* network_manager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A40EDD7520BD91990057A585 /* network_manager.hpp */; };
+		A40EDD7A20BD984F0057A585 /* http_params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40EDD7820BD984F0057A585 /* http_params.cpp */; };
+		A40EDD7B20BD984F0057A585 /* http_params.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A40EDD7920BD984F0057A585 /* http_params.hpp */; };
+		A40EDD7F20BD9B950057A585 /* async_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40EDD7D20BD9B950057A585 /* async_task.cpp */; };
+		A40EDD8020BD9B950057A585 /* async_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A40EDD7E20BD9B950057A585 /* async_task.hpp */; };
+		A40EDD8220BDB14E0057A585 /* libPocoUtild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8120BDB14E0057A585 /* libPocoUtild.a */; };
+		A40EDD8420BDB1FB0057A585 /* libPocoXMLd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8320BDB1FB0057A585 /* libPocoXMLd.a */; };
+		A40EDD8620BDB2A40057A585 /* libPocoNetd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8520BDB2A40057A585 /* libPocoNetd.a */; };
+		A40EDD8820BDB3500057A585 /* libPocoCryptod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8720BDB34F0057A585 /* libPocoCryptod.a */; };
+		A40EDD8A20BDB3DE0057A585 /* libPocoJSONd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */; };
 		A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */; };
 		A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */; };
 		A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */; };
@@ -36,6 +47,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40EDD7420BD91990057A585 /* network_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = network_manager.cpp; sourceTree = "<group>"; };
+		A40EDD7520BD91990057A585 /* network_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = network_manager.hpp; sourceTree = "<group>"; };
+		A40EDD7820BD984F0057A585 /* http_params.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_params.cpp; sourceTree = "<group>"; };
+		A40EDD7920BD984F0057A585 /* http_params.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_params.hpp; sourceTree = "<group>"; };
+		A40EDD7D20BD9B950057A585 /* async_task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = async_task.cpp; sourceTree = "<group>"; };
+		A40EDD7E20BD9B950057A585 /* async_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = async_task.hpp; sourceTree = "<group>"; };
+		A40EDD8120BDB14E0057A585 /* libPocoUtild.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoUtild.a; path = "third-party/libs/debug/libPocoUtild.a"; sourceTree = "<group>"; };
+		A40EDD8320BDB1FB0057A585 /* libPocoXMLd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoXMLd.a; path = "third-party/libs/debug/libPocoXMLd.a"; sourceTree = "<group>"; };
+		A40EDD8520BDB2A40057A585 /* libPocoNetd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNetd.a; path = "third-party/libs/debug/libPocoNetd.a"; sourceTree = "<group>"; };
+		A40EDD8720BDB34F0057A585 /* libPocoCryptod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoCryptod.a; path = "third-party/libs/debug/libPocoCryptod.a"; sourceTree = "<group>"; };
+		A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoJSONd.a; path = "third-party/libs/debug/libPocoJSONd.a"; sourceTree = "<group>"; };
 		A4CA6B8220B88E5300EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B8620B88E5300EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundationd.a; path = "third-party/libs/debug/libPocoFoundationd.a"; sourceTree = "<group>"; };
@@ -71,6 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40EDD8A20BDB3DE0057A585 /* libPocoJSONd.a in Frameworks */,
+				A40EDD8820BDB3500057A585 /* libPocoCryptod.a in Frameworks */,
+				A40EDD8620BDB2A40057A585 /* libPocoNetd.a in Frameworks */,
+				A40EDD8420BDB1FB0057A585 /* libPocoXMLd.a in Frameworks */,
+				A40EDD8220BDB14E0057A585 /* libPocoUtild.a in Frameworks */,
 				A4CA6E8620BAF06700EBB3F7 /* libcrypto.a in Frameworks */,
 				A4CA6E8720BAF06700EBB3F7 /* libssl.a in Frameworks */,
 				A4CA6E7220BA942F00EBB3F7 /* libPocoNetSSLd.a in Frameworks */,
@@ -81,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40EDD7C20BD9B510057A585 /* task */ = {
+			isa = PBXGroup;
+			children = (
+				A40EDD7D20BD9B950057A585 /* async_task.cpp */,
+				A40EDD7E20BD9B950057A585 /* async_task.hpp */,
+			);
+			path = task;
+			sourceTree = "<group>";
+		};
 		A4CA6B7820B88E5300EBB3F7 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +148,7 @@
 		A4CA6B9120B8905C00EBB3F7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A40EDD7C20BD9B510057A585 /* task */,
 				A4CA6E8F20BC416200EBB3F7 /* network */,
 				A4CA6E7F20BAA5A200EBB3F7 /* service */,
 			);
@@ -121,6 +158,11 @@
 		A4CA6E3120B91C4800EBB3F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */,
+				A40EDD8720BDB34F0057A585 /* libPocoCryptod.a */,
+				A40EDD8520BDB2A40057A585 /* libPocoNetd.a */,
+				A40EDD8320BDB1FB0057A585 /* libPocoXMLd.a */,
+				A40EDD8120BDB14E0057A585 /* libPocoUtild.a */,
 				A4CA6E8420BAF06700EBB3F7 /* libcrypto.a */,
 				A4CA6E8520BAF06700EBB3F7 /* libssl.a */,
 				A4CA6E7120BA942F00EBB3F7 /* libPocoNetSSLd.a */,
@@ -208,6 +250,10 @@
 				A4CA6E9120BC43FF00EBB3F7 /* http_client.hpp */,
 				A4CA6E9420BC48FD00EBB3F7 /* request_notification.cpp */,
 				A4CA6E9520BC48FD00EBB3F7 /* request_notification.hpp */,
+				A40EDD7420BD91990057A585 /* network_manager.cpp */,
+				A40EDD7520BD91990057A585 /* network_manager.hpp */,
+				A40EDD7820BD984F0057A585 /* http_params.cpp */,
+				A40EDD7920BD984F0057A585 /* http_params.hpp */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -222,10 +268,13 @@
 				A4CA6E7E20BAA4CF00EBB3F7 /* AriIAccountService.h in Headers */,
 				A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */,
 				A4CA6E6B20BA8BE200EBB3F7 /* AriServiceFactory+Private.h in Headers */,
+				A40EDD7720BD91990057A585 /* network_manager.hpp in Headers */,
 				A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */,
 				A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */,
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
 				A4CA6E8D20BC40C300EBB3F7 /* service_factory.hpp in Headers */,
+				A40EDD8020BD9B950057A585 /* async_task.hpp in Headers */,
+				A40EDD7B20BD984F0057A585 /* http_params.hpp in Headers */,
 				A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */,
 				A4CA6E9320BC43FF00EBB3F7 /* http_client.hpp in Headers */,
 				A4CA6E9720BC48FD00EBB3F7 /* request_notification.hpp in Headers */,
@@ -303,6 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40EDD7F20BD9B950057A585 /* async_task.cpp in Sources */,
+				A40EDD7620BD91990057A585 /* network_manager.cpp in Sources */,
 				A4CA6E9620BC48FD00EBB3F7 /* request_notification.cpp in Sources */,
 				A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */,
 				A4CA6E7D20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm in Sources */,
@@ -311,6 +362,7 @@
 				A4CA6E9220BC43FF00EBB3F7 /* http_client.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
+				A40EDD7A20BD984F0057A585 /* http_params.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
