@@ -16,6 +16,8 @@ namespace ari {
         bool isLoggedIn() override;
         
         void login() override;
+        
+        void signupWithPhoneNumber(const std::string & number) override;
 
     private:
     };

@@ -38,4 +38,13 @@ CJNIEXPORT void JNICALL Java_com_linkedu_core_IAccountService_00024CppProxy_nati
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
+CJNIEXPORT void JNICALL Java_com_linkedu_core_IAccountService_00024CppProxy_native_1signupWithPhoneNumber(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_number)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::ari::IAccountService>(nativeRef);
+        ref->signupWithPhoneNumber(::djinni::String::toCpp(jniEnv, j_number));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
+}
+
 }  // namespace djinni_generated

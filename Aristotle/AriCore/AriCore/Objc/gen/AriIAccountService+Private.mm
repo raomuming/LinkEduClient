@@ -43,6 +43,12 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
+- (void)signupWithPhoneNumber:(nonnull NSString *)number {
+    try {
+        _cppRefHandle.get()->signupWithPhoneNumber(::djinni::String::toCpp(number));
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
 namespace djinni_generated {
 
 auto IAccountService::toCpp(ObjcType objc) -> CppType

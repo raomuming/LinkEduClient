@@ -10,4 +10,6 @@
 
 - (void)login;
 
+- (void)signupWithPhoneNumber:(nonnull NSString *)number;
+
 @end

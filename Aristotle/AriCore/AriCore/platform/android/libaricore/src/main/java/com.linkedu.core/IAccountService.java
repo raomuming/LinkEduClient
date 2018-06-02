@@ -10,6 +10,8 @@ public abstract class IAccountService {
 
     public abstract void login();
 
+    public abstract void signupWithPhoneNumber(String number);
+
     private static final class CppProxy extends IAccountService
     {
         private final long nativeRef;
@@ -48,5 +50,13 @@ public abstract class IAccountService {
             native_login(this.nativeRef);
         }
         private native void native_login(long _nativeRef);
+
+        @Override
+        public void signupWithPhoneNumber(String number)
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_signupWithPhoneNumber(this.nativeRef, number);
+        }
+        private native void native_signupWithPhoneNumber(long _nativeRef, String number);
     }
 }

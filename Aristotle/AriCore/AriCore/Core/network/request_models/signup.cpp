@@ -7,6 +7,9 @@
 //
 
 #include "signup.hpp"
+#include "Poco/Dynamic/Var.h"
+
+using Poco::Dynamic::Var;
 
 namespace ari {
     std::string Signup::httpMethod()
@@ -22,5 +25,10 @@ namespace ari {
     void Signup::onRequestFinished(HTTPResponse::HTTPStatus status, const std::shared_ptr<JSONConfiguration> jsonConfig)
     {
         
+    }
+    
+    void Signup::setPhoneNumber(const std::string& phoneNumber)
+    {
+        _object->set("phone_number", Var(phoneNumber.c_str()));
     }
 }

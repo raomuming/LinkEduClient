@@ -3,6 +3,8 @@
 
 #pragma once
 
+#include <string>
+
 namespace ari {
 
 class IAccountService {
@@ -12,6 +14,8 @@ public:
     virtual bool isLoggedIn() = 0;
 
     virtual void login() = 0;
+
+    virtual void signupWithPhoneNumber(const std::string & number) = 0;
 };
 
 }  // namespace ari

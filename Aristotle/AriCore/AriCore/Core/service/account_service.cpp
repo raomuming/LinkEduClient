@@ -8,6 +8,7 @@
 
 #include "account_service.hpp"
 #include "../network/request_models/login.hpp"
+#include "../network/request_models/signup.hpp"
 #include "../network/network_manager.hpp"
 
 namespace ari {
@@ -19,6 +20,13 @@ namespace ari {
     void AccountService::login()
     {
         auto requestModel = std::make_shared<LoginUsingPhoneNumber>();
+        NetworkManager::instance()->addRequest(requestModel);
+    }
+    
+    void AccountService::signupWithPhoneNumber(const std::string & number)
+    {
+        auto requestModel = std::make_shared<Signup>();
+        requestModel->setPhoneNumber(number);
         NetworkManager::instance()->addRequest(requestModel);
     }
 }

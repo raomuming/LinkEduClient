@@ -2,4 +2,5 @@
 i_account_service = interface +c {
 	is_logged_in(): bool;
 	login();
+	signup_with_phone_number(number: string);
 }
