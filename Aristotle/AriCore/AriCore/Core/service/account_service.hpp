@@ -14,6 +14,9 @@ namespace ari {
     class AccountService : public IAccountService {
     public:
         bool isLoggedIn() override;
+        
+        void login() override;
+
     private:
     };
 }

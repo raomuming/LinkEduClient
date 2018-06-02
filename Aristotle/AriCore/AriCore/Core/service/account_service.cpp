@@ -7,10 +7,18 @@
 //
 
 #include "account_service.hpp"
+#include "../network/request_models/login.hpp"
+#include "../network/network_manager.hpp"
 
 namespace ari {
     bool AccountService::isLoggedIn()
     {
         return false;
+    }
+    
+    void AccountService::login()
+    {
+        auto requestModel = std::make_shared<LoginUsingPhoneNumber>();
+        NetworkManager::instance()->addRequest(requestModel);
     }
 }

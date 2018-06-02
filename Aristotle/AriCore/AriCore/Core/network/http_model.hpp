@@ -11,9 +11,11 @@
 #include <string>
 
 #include "Poco/Net/HTTPResponse.h"
+#include "Poco/Net/HTTPRequest.h"
 #include "Poco/Util/JSONConfiguration.h"
 
 using Poco::Net::HTTPResponse;
+using Poco::Net::HTTPRequest;
 using Poco::Util::JSONConfiguration;
 
 namespace ari {

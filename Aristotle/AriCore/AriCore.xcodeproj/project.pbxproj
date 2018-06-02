@@ -17,6 +17,8 @@
 		A40EDD8A20BDB3DE0057A585 /* libPocoJSONd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */; };
 		A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB303D20C23BB6006CD59B /* http_task.cpp */; };
 		A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB303E20C23BB6006CD59B /* http_task.hpp */; };
+		A4BB304420C25EA8006CD59B /* login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB304220C25EA8006CD59B /* login.cpp */; };
+		A4BB304520C25EA8006CD59B /* login.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB304320C25EA8006CD59B /* login.hpp */; };
 		A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */; };
 		A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */; };
 		A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */; };
@@ -52,6 +54,8 @@
 		A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoJSONd.a; path = "third-party/libs/debug/libPocoJSONd.a"; sourceTree = "<group>"; };
 		A4BB303D20C23BB6006CD59B /* http_task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_task.cpp; sourceTree = "<group>"; };
 		A4BB303E20C23BB6006CD59B /* http_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_task.hpp; sourceTree = "<group>"; };
+		A4BB304220C25EA8006CD59B /* login.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = login.cpp; sourceTree = "<group>"; };
+		A4BB304320C25EA8006CD59B /* login.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = login.hpp; sourceTree = "<group>"; };
 		A4CA6B8220B88E5300EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B8620B88E5300EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundationd.a; path = "third-party/libs/debug/libPocoFoundationd.a"; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		A4BB304120C25883006CD59B /* request_models */ = {
 			isa = PBXGroup;
 			children = (
+				A4BB304220C25EA8006CD59B /* login.cpp */,
+				A4BB304320C25EA8006CD59B /* login.hpp */,
 			);
 			path = request_models;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 				A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */,
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
 				A4CA6E8D20BC40C300EBB3F7 /* service_factory.hpp in Headers */,
+				A4BB304520C25EA8006CD59B /* login.hpp in Headers */,
 				A40EDD7B20BD984F0057A585 /* http_model.hpp in Headers */,
 				A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */,
 				A4CA6E8320BAAC1900EBB3F7 /* account_service.hpp in Headers */,
@@ -339,6 +346,7 @@
 				A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */,
 				A4CA6E7D20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm in Sources */,
 				A4CA6E7320BA989900EBB3F7 /* AriServiceFactory+Private.mm in Sources */,
+				A4BB304420C25EA8006CD59B /* login.cpp in Sources */,
 				A4CA6E8220BAAC1900EBB3F7 /* account_service.cpp in Sources */,
 				A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,

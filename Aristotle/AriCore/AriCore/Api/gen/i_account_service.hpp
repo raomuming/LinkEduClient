@@ -10,6 +10,8 @@ public:
     virtual ~IAccountService() {}
 
     virtual bool isLoggedIn() = 0;
+
+    virtual void login() = 0;
 };
 
 }  // namespace ari

@@ -8,4 +8,6 @@
 
 - (BOOL)isLoggedIn;
 
+- (void)login;
+
 @end

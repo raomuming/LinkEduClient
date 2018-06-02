@@ -8,6 +8,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class IAccountService {
     public abstract boolean isLoggedIn();
 
+    public abstract void login();
+
     private static final class CppProxy extends IAccountService
     {
         private final long nativeRef;
@@ -38,5 +40,13 @@ public abstract class IAccountService {
             return native_isLoggedIn(this.nativeRef);
         }
         private native boolean native_isLoggedIn(long _nativeRef);
+
+        @Override
+        public void login()
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_login(this.nativeRef);
+        }
+        private native void native_login(long _nativeRef);
     }
 }

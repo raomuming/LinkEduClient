@@ -17,6 +17,8 @@ namespace ari{
     public:
         explicit HTTPTask(const std::shared_ptr<HTTPModel>& model);
         
+        virtual ~HTTPTask();
+        
         void runTask() override;
     private:
         std::shared_ptr<HTTPModel> _model;

@@ -11,11 +11,13 @@
 #include "Poco/Net/HTTPSClientSession.h"
 #include "Poco/Net/HTTPRequest.h"
 #include "Poco/Net/HTTPResponse.h"
+#include "Poco/Net/Context.h"
 
 using Poco::URI;
 using Poco::Net::HTTPSClientSession;
 using Poco::Net::HTTPRequest;
 using Poco::Net::HTTPResponse;
+using Poco::Net::Context;
 
 namespace ari {
     HTTPTask::HTTPTask(const std::shared_ptr<HTTPModel>& model)
@@ -23,6 +25,11 @@ namespace ari {
     , _model(model)
     {}
     
+    HTTPTask::~HTTPTask()
+    {
+        
+    }
+
     void HTTPTask::runTask()
     {
         if (!_model) {
@@ -31,7 +38,11 @@ namespace ari {
         
         URI uri(_model->path());
         
-        HTTPSClientSession session(uri.getHost(), uri.getPort());
+        Context::Ptr context = new Context(Context::CLIENT_USE, "", "", "", Context::VERIFY_NONE, 9, false);
+        HTTPSClientSession session(context);
+        session.setHost(uri.getHost());
+        session.setPort(uri.getPort());
+        
         HTTPRequest req(_model->httpMethod(), uri.getPath(), HTTPRequest::HTTP_1_1);
         
         if (_model->httpMethod() != HTTPRequest::HTTP_GET) {
@@ -40,7 +51,7 @@ namespace ari {
             req.setContentLength(_model->toString().length());
         }
         
-        session.sendRequest(req) << _model->toString();
+        session.sendRequest(req) << _model->toString()<< std::flush;
         
         HTTPResponse res;
         std::istream& rs = session.receiveResponse(res);
