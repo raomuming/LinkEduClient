@@ -19,11 +19,6 @@ namespace ari {
         return "https://link-edu.net/login";
     }
     
-    std::string LoginUsingPhoneNumber::toString()
-    {
-        return "{}";
-    }
-    
     void LoginUsingPhoneNumber::onRequestFinished(HTTPResponse::HTTPStatus status, const std::shared_ptr<JSONConfiguration> jsonConfig)
     {
         

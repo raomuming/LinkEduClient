@@ -1,5 +1,5 @@
 //
-//  login.hpp
+//  signup.hpp
 //  AriCore
 //
 //  Created by Eric Rao on 02/06/2018.
@@ -11,9 +11,8 @@
 #include "../http_model.hpp"
 
 namespace ari {
-    class LoginUsingPhoneNumber : public HTTPModel {
+    class Signup : public HTTPModel {
     public:
-        
         std::string httpMethod() override;
         
         std::string path() override;

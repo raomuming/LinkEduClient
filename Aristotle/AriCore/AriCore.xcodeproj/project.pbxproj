@@ -19,6 +19,9 @@
 		A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB303E20C23BB6006CD59B /* http_task.hpp */; };
 		A4BB304420C25EA8006CD59B /* login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB304220C25EA8006CD59B /* login.cpp */; };
 		A4BB304520C25EA8006CD59B /* login.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB304320C25EA8006CD59B /* login.hpp */; };
+		A4BB304820C296EF006CD59B /* signup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB304620C296EF006CD59B /* signup.cpp */; };
+		A4BB304920C296EF006CD59B /* signup.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB304720C296EF006CD59B /* signup.hpp */; };
+		A4BB304B20C29C71006CD59B /* http_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB304A20C29C71006CD59B /* http_model.cpp */; };
 		A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */; };
 		A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */; };
 		A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */; };
@@ -56,6 +59,9 @@
 		A4BB303E20C23BB6006CD59B /* http_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_task.hpp; sourceTree = "<group>"; };
 		A4BB304220C25EA8006CD59B /* login.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = login.cpp; sourceTree = "<group>"; };
 		A4BB304320C25EA8006CD59B /* login.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = login.hpp; sourceTree = "<group>"; };
+		A4BB304620C296EF006CD59B /* signup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = signup.cpp; sourceTree = "<group>"; };
+		A4BB304720C296EF006CD59B /* signup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = signup.hpp; sourceTree = "<group>"; };
+		A4BB304A20C29C71006CD59B /* http_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_model.cpp; sourceTree = "<group>"; };
 		A4CA6B8220B88E5300EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B8620B88E5300EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundationd.a; path = "third-party/libs/debug/libPocoFoundationd.a"; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 			children = (
 				A4BB304220C25EA8006CD59B /* login.cpp */,
 				A4BB304320C25EA8006CD59B /* login.hpp */,
+				A4BB304620C296EF006CD59B /* signup.cpp */,
+				A4BB304720C296EF006CD59B /* signup.hpp */,
 			);
 			path = request_models;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 				A4BB303E20C23BB6006CD59B /* http_task.hpp */,
 				A40EDD7420BD91990057A585 /* network_manager.cpp */,
 				A40EDD7520BD91990057A585 /* network_manager.hpp */,
+				A4BB304A20C29C71006CD59B /* http_model.cpp */,
 				A40EDD7920BD984F0057A585 /* http_model.hpp */,
 			);
 			path = network;
@@ -261,6 +270,7 @@
 				A4CA6E6B20BA8BE200EBB3F7 /* AriServiceFactory+Private.h in Headers */,
 				A40EDD7720BD91990057A585 /* network_manager.hpp in Headers */,
 				A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */,
+				A4BB304920C296EF006CD59B /* signup.hpp in Headers */,
 				A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */,
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
 				A4CA6E8D20BC40C300EBB3F7 /* service_factory.hpp in Headers */,
@@ -350,7 +360,9 @@
 				A4CA6E8220BAAC1900EBB3F7 /* account_service.cpp in Sources */,
 				A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
+				A4BB304B20C29C71006CD59B /* http_model.cpp in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
+				A4BB304820C296EF006CD59B /* signup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
