@@ -43,15 +43,16 @@ namespace ari {
         session.setHost(uri.getHost());
         session.setPort(uri.getPort());
         
-        HTTPRequest req(_model->httpMethod(), uri.getPath(), HTTPRequest::HTTP_1_1);
-        
-        if (_model->httpMethod() != HTTPRequest::HTTP_GET) {
+        if (_model->httpMethod() == HTTPRequest::HTTP_GET) {
+            HTTPRequest req(_model->httpMethod(), uri.getPathAndQuery(), HTTPRequest::HTTP_1_1);
+            session.sendRequest(req) << std::flush;
+        } else {
+            HTTPRequest req(_model->httpMethod(), uri.getPath(), HTTPRequest::HTTP_1_1);
             req.setChunkedTransferEncoding(false);
             req.setContentType("application/json");
             req.setContentLength(_model->toString().length());
+            session.sendRequest(req) << _model->toString() << std::flush;
         }
-        
-        session.sendRequest(req) << _model->toString()<< std::flush;
         
         HTTPResponse res;
         std::istream& rs = session.receiveResponse(res);
