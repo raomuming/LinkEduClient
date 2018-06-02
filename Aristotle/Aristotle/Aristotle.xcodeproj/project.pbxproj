@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */; };
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
 		A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */; };
 		A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		349585FC1C15FED299B54C61 /* Pods_Aristotle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aristotle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCA9B2C88E607B3F7FB6211 /* Pods-Aristotle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aristotle.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Aristotle/Pods-Aristotle.debug.xcconfig"; sourceTree = "<group>"; };
+		A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOnlyTextCell.swift; sourceTree = "<group>"; };
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4CA6B6B20B88E2C00EBB3F7 /* Aristotle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aristotle.xcdatamodel; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A4BB305220C2FF4E006CD59B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		A4CA6B5720B88E2C00EBB3F7 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		A4CA6B6220B88E2C00EBB3F7 /* Aristotle */ = {
 			isa = PBXGroup;
 			children = (
+				A4BB305220C2FF4E006CD59B /* common */,
 				A4CA6E3420B921D200EBB3F7 /* Login */,
 				A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */,
 				A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */,
@@ -213,11 +224,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-Aristotle/Pods-Aristotle-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -251,6 +262,7 @@
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
 				A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,
+				A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
