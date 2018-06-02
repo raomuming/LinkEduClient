@@ -10,7 +10,10 @@
 
 #include <memory>
 
-#include "http_params.hpp"
+#include "http_model.hpp"
+#include "Poco/TaskManager.h"
+
+using Poco::TaskManager;
 
 namespace ari {
     class NetworkManager
@@ -18,9 +21,11 @@ namespace ari {
     public:
         static std::shared_ptr<NetworkManager> instance();
         
-        void addRequest(const std::shared_ptr<HTTPParams> params);
+        NetworkManager();
+        
+        void addRequest(const std::shared_ptr<HTTPModel> model);
         
     private:
-        static std::string url;
+        std::shared_ptr<TaskManager> taskManager;
     };
 }

@@ -7,13 +7,13 @@
 //
 
 #include "network_manager.hpp"
-#include "../task/async_task.hpp"
 #include "Poco/ThreadPool.h"
 #include "Poco/URI.h"
 #include "Poco/Util/JSONConfiguration.h"
 #include "Poco/Net/HTTPSClientSession.h"
 #include "Poco/Net/HTTPRequest.h"
 #include "Poco/Net/HTTPResponse.h"
+#include "http_task.hpp"
 #include <mutex>
 
 using Poco::ThreadPool;
@@ -35,31 +35,14 @@ namespace ari {
         return instance;
     }
     
-    void NetworkManager::addRequest(const std::shared_ptr<HTTPParams> params)
+    NetworkManager::NetworkManager()
     {
-        auto task = std::make_shared<AsyncTask>();
-        task->setFunc([&params]{
-            URI uri(params->path());
-            
-            HTTPSClientSession session(uri.getHost(), uri.getPort());
-            HTTPRequest req(params->httpMethod(), uri.getPath(), HTTPRequest::HTTP_1_1);
-            
-            if (params->httpMethod() != HTTPRequest::HTTP_GET) {
-                req.setChunkedTransferEncoding(false);
-                req.setContentType("application/json");
-                req.setContentLength(params->toString().length());
-            }
-            
-            session.sendRequest(req) << params->toString();
-            
-            HTTPResponse res;
-            std::istream& rs = session.receiveResponse(res);
-            
-            auto pResult = std::make_shared<JSONConfiguration>(rs);
-            
-            params->onRequestFinished(res.getStatus(), pResult);
-        });
-        
-        ThreadPool::defaultPool().start(*task);
+        taskManager = std::make_shared<TaskManager>();
+    }
+
+    void NetworkManager::addRequest(const std::shared_ptr<HTTPModel> model)
+    {
+        auto task = new HTTPTask(model);
+        taskManager->start(task);
     }
 }

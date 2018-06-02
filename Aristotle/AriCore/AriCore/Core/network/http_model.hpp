@@ -1,5 +1,5 @@
 //
-//  http_params.hpp
+//  http_model.hpp
 //  AriCore
 //
 //  Created by Eric Rao on 29/05/2018.
@@ -17,7 +17,7 @@ using Poco::Net::HTTPResponse;
 using Poco::Util::JSONConfiguration;
 
 namespace ari {
-    class HTTPParams {
+    class HTTPModel {
     public:
         virtual std::string httpMethod() = 0;
         

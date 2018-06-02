@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		A40EDD7620BD91990057A585 /* network_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40EDD7420BD91990057A585 /* network_manager.cpp */; };
 		A40EDD7720BD91990057A585 /* network_manager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A40EDD7520BD91990057A585 /* network_manager.hpp */; };
-		A40EDD7A20BD984F0057A585 /* http_params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40EDD7820BD984F0057A585 /* http_params.cpp */; };
-		A40EDD7B20BD984F0057A585 /* http_params.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A40EDD7920BD984F0057A585 /* http_params.hpp */; };
-		A40EDD7F20BD9B950057A585 /* async_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40EDD7D20BD9B950057A585 /* async_task.cpp */; };
-		A40EDD8020BD9B950057A585 /* async_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A40EDD7E20BD9B950057A585 /* async_task.hpp */; };
+		A40EDD7B20BD984F0057A585 /* http_model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A40EDD7920BD984F0057A585 /* http_model.hpp */; };
 		A40EDD8220BDB14E0057A585 /* libPocoUtild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8120BDB14E0057A585 /* libPocoUtild.a */; };
 		A40EDD8420BDB1FB0057A585 /* libPocoXMLd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8320BDB1FB0057A585 /* libPocoXMLd.a */; };
 		A40EDD8620BDB2A40057A585 /* libPocoNetd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8520BDB2A40057A585 /* libPocoNetd.a */; };
 		A40EDD8820BDB3500057A585 /* libPocoCryptod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8720BDB34F0057A585 /* libPocoCryptod.a */; };
 		A40EDD8A20BDB3DE0057A585 /* libPocoJSONd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */; };
+		A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB303D20C23BB6006CD59B /* http_task.cpp */; };
+		A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB303E20C23BB6006CD59B /* http_task.hpp */; };
 		A4CA6E3320B91C4800EBB3F7 /* libPocoFoundationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */; };
 		A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E4A20BA818300EBB3F7 /* DJIError.mm */; };
 		A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E4B20BA818300EBB3F7 /* DJIMarshal+Private.h */; };
@@ -40,24 +39,19 @@
 		A4CA6E8720BAF06700EBB3F7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E8520BAF06700EBB3F7 /* libssl.a */; };
 		A4CA6E8D20BC40C300EBB3F7 /* service_factory.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E8B20BC40C300EBB3F7 /* service_factory.hpp */; };
 		A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */; };
-		A4CA6E9220BC43FF00EBB3F7 /* http_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E9020BC43FF00EBB3F7 /* http_client.cpp */; };
-		A4CA6E9320BC43FF00EBB3F7 /* http_client.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E9120BC43FF00EBB3F7 /* http_client.hpp */; };
-		A4CA6E9620BC48FD00EBB3F7 /* request_notification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E9420BC48FD00EBB3F7 /* request_notification.cpp */; };
-		A4CA6E9720BC48FD00EBB3F7 /* request_notification.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E9520BC48FD00EBB3F7 /* request_notification.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A40EDD7420BD91990057A585 /* network_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = network_manager.cpp; sourceTree = "<group>"; };
 		A40EDD7520BD91990057A585 /* network_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = network_manager.hpp; sourceTree = "<group>"; };
-		A40EDD7820BD984F0057A585 /* http_params.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_params.cpp; sourceTree = "<group>"; };
-		A40EDD7920BD984F0057A585 /* http_params.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_params.hpp; sourceTree = "<group>"; };
-		A40EDD7D20BD9B950057A585 /* async_task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = async_task.cpp; sourceTree = "<group>"; };
-		A40EDD7E20BD9B950057A585 /* async_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = async_task.hpp; sourceTree = "<group>"; };
+		A40EDD7920BD984F0057A585 /* http_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_model.hpp; sourceTree = "<group>"; };
 		A40EDD8120BDB14E0057A585 /* libPocoUtild.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoUtild.a; path = "third-party/libs/debug/libPocoUtild.a"; sourceTree = "<group>"; };
 		A40EDD8320BDB1FB0057A585 /* libPocoXMLd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoXMLd.a; path = "third-party/libs/debug/libPocoXMLd.a"; sourceTree = "<group>"; };
 		A40EDD8520BDB2A40057A585 /* libPocoNetd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNetd.a; path = "third-party/libs/debug/libPocoNetd.a"; sourceTree = "<group>"; };
 		A40EDD8720BDB34F0057A585 /* libPocoCryptod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoCryptod.a; path = "third-party/libs/debug/libPocoCryptod.a"; sourceTree = "<group>"; };
 		A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoJSONd.a; path = "third-party/libs/debug/libPocoJSONd.a"; sourceTree = "<group>"; };
+		A4BB303D20C23BB6006CD59B /* http_task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_task.cpp; sourceTree = "<group>"; };
+		A4BB303E20C23BB6006CD59B /* http_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_task.hpp; sourceTree = "<group>"; };
 		A4CA6B8220B88E5300EBB3F7 /* AriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B8620B88E5300EBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CA6E3220B91C4800EBB3F7 /* libPocoFoundationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundationd.a; path = "third-party/libs/debug/libPocoFoundationd.a"; sourceTree = "<group>"; };
@@ -82,10 +76,6 @@
 		A4CA6E8520BAF06700EBB3F7 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "third-party/libs/debug/libssl.a"; sourceTree = "<group>"; };
 		A4CA6E8B20BC40C300EBB3F7 /* service_factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = service_factory.hpp; sourceTree = "<group>"; };
 		A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_account_service.hpp; sourceTree = "<group>"; };
-		A4CA6E9020BC43FF00EBB3F7 /* http_client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_client.cpp; sourceTree = "<group>"; };
-		A4CA6E9120BC43FF00EBB3F7 /* http_client.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_client.hpp; sourceTree = "<group>"; };
-		A4CA6E9420BC48FD00EBB3F7 /* request_notification.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = request_notification.cpp; sourceTree = "<group>"; };
-		A4CA6E9520BC48FD00EBB3F7 /* request_notification.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = request_notification.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +98,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A40EDD7C20BD9B510057A585 /* task */ = {
+		A4BB304120C25883006CD59B /* request_models */ = {
 			isa = PBXGroup;
 			children = (
-				A40EDD7D20BD9B950057A585 /* async_task.cpp */,
-				A40EDD7E20BD9B950057A585 /* async_task.hpp */,
 			);
-			path = task;
+			path = request_models;
 			sourceTree = "<group>";
 		};
 		A4CA6B7820B88E5300EBB3F7 = {
@@ -148,7 +136,6 @@
 		A4CA6B9120B8905C00EBB3F7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A40EDD7C20BD9B510057A585 /* task */,
 				A4CA6E8F20BC416200EBB3F7 /* network */,
 				A4CA6E7F20BAA5A200EBB3F7 /* service */,
 			);
@@ -246,14 +233,12 @@
 		A4CA6E8F20BC416200EBB3F7 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				A4CA6E9020BC43FF00EBB3F7 /* http_client.cpp */,
-				A4CA6E9120BC43FF00EBB3F7 /* http_client.hpp */,
-				A4CA6E9420BC48FD00EBB3F7 /* request_notification.cpp */,
-				A4CA6E9520BC48FD00EBB3F7 /* request_notification.hpp */,
+				A4BB304120C25883006CD59B /* request_models */,
+				A4BB303D20C23BB6006CD59B /* http_task.cpp */,
+				A4BB303E20C23BB6006CD59B /* http_task.hpp */,
 				A40EDD7420BD91990057A585 /* network_manager.cpp */,
 				A40EDD7520BD91990057A585 /* network_manager.hpp */,
-				A40EDD7820BD984F0057A585 /* http_params.cpp */,
-				A40EDD7920BD984F0057A585 /* http_params.hpp */,
+				A40EDD7920BD984F0057A585 /* http_model.hpp */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -273,15 +258,13 @@
 				A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */,
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
 				A4CA6E8D20BC40C300EBB3F7 /* service_factory.hpp in Headers */,
-				A40EDD8020BD9B950057A585 /* async_task.hpp in Headers */,
-				A40EDD7B20BD984F0057A585 /* http_params.hpp in Headers */,
+				A40EDD7B20BD984F0057A585 /* http_model.hpp in Headers */,
 				A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */,
-				A4CA6E9320BC43FF00EBB3F7 /* http_client.hpp in Headers */,
-				A4CA6E9720BC48FD00EBB3F7 /* request_notification.hpp in Headers */,
 				A4CA6E8320BAAC1900EBB3F7 /* account_service.hpp in Headers */,
 				A4CA6E7C20BAA4CF00EBB3F7 /* AriIAccountService+Private.h in Headers */,
 				A4CA6E5120BA818300EBB3F7 /* DJIMarshal+Private.h in Headers */,
 				A4CA6E5320BA818300EBB3F7 /* DJICppWrapperCache+Private.h in Headers */,
+				A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,17 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A40EDD7F20BD9B950057A585 /* async_task.cpp in Sources */,
 				A40EDD7620BD91990057A585 /* network_manager.cpp in Sources */,
-				A4CA6E9620BC48FD00EBB3F7 /* request_notification.cpp in Sources */,
 				A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */,
 				A4CA6E7D20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm in Sources */,
 				A4CA6E7320BA989900EBB3F7 /* AriServiceFactory+Private.mm in Sources */,
 				A4CA6E8220BAAC1900EBB3F7 /* account_service.cpp in Sources */,
-				A4CA6E9220BC43FF00EBB3F7 /* http_client.cpp in Sources */,
+				A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
-				A40EDD7A20BD984F0057A585 /* http_params.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
