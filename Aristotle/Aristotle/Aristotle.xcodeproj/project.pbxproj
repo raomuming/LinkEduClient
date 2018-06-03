@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */; };
+		A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */; };
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
 		A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */; };
 		A4CA6B6E20B88E2C00EBB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		349585FC1C15FED299B54C61 /* Pods_Aristotle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aristotle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCA9B2C88E607B3F7FB6211 /* Pods-Aristotle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aristotle.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Aristotle/Pods-Aristotle.debug.xcconfig"; sourceTree = "<group>"; };
 		A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOnlyTextCell.swift; sourceTree = "<group>"; };
+		A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputViewController.swift; sourceTree = "<group>"; };
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4CA6B6B20B88E2C00EBB3F7 /* Aristotle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aristotle.xcdatamodel; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */,
 				A4CA6E3A20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift */,
 				A4CA6E3C20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift */,
+				A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */,
 				A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */,
 				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
@@ -397,7 +401,10 @@
 					"${SRCROOT}/../AriCore/AriCore/Objc/gen",
 				);
 				INFOPLIST_FILE = Aristotle/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.link-edu.Aristotle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Aristotle/Aristotle-Bridging-Header.h";
@@ -420,7 +427,10 @@
 					"${SRCROOT}/../AriCore/AriCore/Objc/gen",
 				);
 				INFOPLIST_FILE = Aristotle/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.link-edu.Aristotle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Aristotle/Aristotle-Bridging-Header.h";

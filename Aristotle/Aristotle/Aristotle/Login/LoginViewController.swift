@@ -66,7 +66,7 @@ class LoginViewController : UIViewController {
     }
     
     @objc func signupWithPhoneNumber() {
-        let phoneNumberSignupViewController = PhoneNumberSignupViewController()
-        self.navigationController?.pushViewController(phoneNumberSignupViewController, animated: true)
+        let phoneNumberInputViewController = PhoneNumberInputViewController()
+        self.navigationController?.pushViewController(phoneNumberInputViewController, animated: true)
     }
 }
