@@ -9,8 +9,14 @@
 import UIKit
 import SnapKit
 
+let kCellIdentifierInputOnlyTextCellText = "Input_OnlyText_Cell_text"
+let kCellIdentifierInputOnlyTextCellCaptcha = "Input_OnlyText_Cell_Captcha"
+let kCellIdentifierInputOnlyTextCellPassword = "Input_OnlyText_Cell_Password"
+let kCellIdentifierInputOnlyTextCellPhone = "Input_OnlyText_Cell_Phone"
+
 class InputOnlyTextCell : UITableViewCell {
     var textField: UITextField?
+    //var captchaView: UITapImageView?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -33,7 +39,14 @@ class InputOnlyTextCell : UITableViewCell {
             self.contentView.addSubview(textField!)
             textField?.snp.makeConstraints{ (make) -> Void in
                 make.height.equalTo(21)
+                make.left.equalTo(self.contentView).offset(10)
+                make.right.equalTo(self.contentView).offset(-10)
+                make.bottom.equalTo(self.contentView).offset(-15)
             }
+        }
+        
+        if reuseIdentifier == kCellIdentifierInputOnlyTextCellCaptcha {
+            
         }
     }
 }
