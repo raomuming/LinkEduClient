@@ -108,6 +108,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4424AB320C6E8ED004D5199 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		A4BB304120C25883006CD59B /* request_models */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +157,7 @@
 		A4CA6B9120B8905C00EBB3F7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A4424AB320C6E8ED004D5199 /* model */,
 				A4CA6E8F20BC416200EBB3F7 /* network */,
 				A4CA6E7F20BAA5A200EBB3F7 /* service */,
 			);

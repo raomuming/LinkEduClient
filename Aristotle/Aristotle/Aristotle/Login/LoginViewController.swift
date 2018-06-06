@@ -52,7 +52,10 @@ class LoginViewController : UIViewController {
     @objc func loginWithPhoneNumber() {
         //let phoneNumberLoginViewController = PhoneNumberLoginViewController()
         //self.navigationController?.pushViewController(phoneNumberLoginViewController, animated: true)
-        AriServiceFactory.accountService()?.signup(withPhoneNumber: "111111")
+        //AriServiceFactory.accountService()?.signup(withPhoneNumber: "111111")
+        let phoneNumberLoginViewController = PhoneNumberLoginViewController()
+        self.navigationController?.pushViewController(phoneNumberLoginViewController, animated: true)
+        
     }
     
     fileprivate func initPhoneNumberSignupButton() {
