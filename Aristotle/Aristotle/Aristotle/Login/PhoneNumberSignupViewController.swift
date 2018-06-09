@@ -95,6 +95,7 @@ class PhoneNumberSignupViewController : UIViewController {
         signupButton = UIButton()
         signupButton?.backgroundColor = UIColor(red: 80/255, green: 185/255, blue: 167/255, alpha: 0.8)
         signupButton?.setTitle("注册", for: .normal)
+        signupButton?.addTarget(self, action: #selector(signupWithPhoneNumber), for: .touchUpInside)
         self.view.addSubview(signupButton!)
         signupButton?.snp.makeConstraints({ (make) in
             make.height.equalTo(30)
@@ -102,5 +103,11 @@ class PhoneNumberSignupViewController : UIViewController {
             make.right.equalTo(self.view).offset(-30)
             make.top.equalTo(self.view).offset(350)
         })
+    }
+    
+    @objc fileprivate func signupWithPhoneNumber() {
+        if let phoneNumber = phoneNumberLabel?.text, let password = passwordInputField?.text {
+            AriServiceFactory.accountService()?.signup(withPhoneNumber: phoneNumber, password: password)
+        }
     }
 }

@@ -37,15 +37,19 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
-- (void)login {
+- (void)loginWithPhoneNumber:(nonnull NSString *)number
+                    password:(nonnull NSString *)password {
     try {
-        _cppRefHandle.get()->login();
+        _cppRefHandle.get()->loginWithPhoneNumber(::djinni::String::toCpp(number),
+                                                  ::djinni::String::toCpp(password));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
-- (void)signupWithPhoneNumber:(nonnull NSString *)number {
+- (void)signupWithPhoneNumber:(nonnull NSString *)number
+                     password:(nonnull NSString *)password {
     try {
-        _cppRefHandle.get()->signupWithPhoneNumber(::djinni::String::toCpp(number));
+        _cppRefHandle.get()->signupWithPhoneNumber(::djinni::String::toCpp(number),
+                                                   ::djinni::String::toCpp(password));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

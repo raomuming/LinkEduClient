@@ -7,6 +7,9 @@
 //
 
 #include "login.hpp"
+#include "Poco/Dynamic/Var.h"
+
+using Poco::Dynamic::Var;
 
 namespace ari {
     std::string LoginUsingPhoneNumber::httpMethod()
@@ -16,11 +19,22 @@ namespace ari {
     
     std::string LoginUsingPhoneNumber::path()
     {
-        return "https://link-edu.net/login";
+        return "https://link-edu.net/t/login";
     }
     
     void LoginUsingPhoneNumber::onRequestFinished(HTTPResponse::HTTPStatus status, const std::shared_ptr<JSONConfiguration> jsonConfig)
     {
-        
+        auto phoneNumber = jsonConfig->getString("phone_number");
+        auto name = jsonConfig->getString("name");
+    }
+    
+    void LoginUsingPhoneNumber::setPhoneNumber(const std::string& phoneNumber)
+    {
+        _object->set("phone_number", Var(phoneNumber.c_str()));
+    }
+    
+    void LoginUsingPhoneNumber::setPassword(const std::string& password)
+    {
+        _object->set("password", Var(password.c_str()));
     }
 }

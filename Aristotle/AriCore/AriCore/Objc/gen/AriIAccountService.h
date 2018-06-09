@@ -8,8 +8,10 @@
 
 - (BOOL)isLoggedIn;
 
-- (void)login;
+- (void)loginWithPhoneNumber:(nonnull NSString *)number
+                    password:(nonnull NSString *)password;
 
-- (void)signupWithPhoneNumber:(nonnull NSString *)number;
+- (void)signupWithPhoneNumber:(nonnull NSString *)number
+                     password:(nonnull NSString *)password;
 
 @end

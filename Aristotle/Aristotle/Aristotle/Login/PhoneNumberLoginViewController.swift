@@ -60,6 +60,8 @@ class PhoneNumberLoginViewController : UIViewController {
     }
     
     @objc func loginWithPhoneNumber() {
-        
+        if let phoneNumber = phoneNumberField?.text, let password = passwordField?.text {
+            AriServiceFactory.accountService()?.login(withPhoneNumber: phoneNumber, password: password)
+        }
     }
 }

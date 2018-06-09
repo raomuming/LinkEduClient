@@ -19,7 +19,7 @@ namespace ari {
     
     std::string Signup::path()
     {
-        return "https://link-edu.net/signup";
+        return "https://link-edu.net/t/register";
     }
     
     void Signup::onRequestFinished(HTTPResponse::HTTPStatus status, const std::shared_ptr<JSONConfiguration> jsonConfig)
@@ -30,5 +30,10 @@ namespace ari {
     void Signup::setPhoneNumber(const std::string& phoneNumber)
     {
         _object->set("phone_number", Var(phoneNumber.c_str()));
+    }
+    
+    void Signup::setPassword(const std::string& password)
+    {
+        _object->set("password", Var(password.c_str()));
     }
 }

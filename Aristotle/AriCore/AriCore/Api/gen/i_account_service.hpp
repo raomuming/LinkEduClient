@@ -13,9 +13,9 @@ public:
 
     virtual bool isLoggedIn() = 0;
 
-    virtual void login() = 0;
+    virtual void loginWithPhoneNumber(const std::string & number, const std::string & password) = 0;
 
-    virtual void signupWithPhoneNumber(const std::string & number) = 0;
+    virtual void signupWithPhoneNumber(const std::string & number, const std::string & password) = 0;
 };
 
 }  // namespace ari

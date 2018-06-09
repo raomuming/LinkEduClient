@@ -8,9 +8,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class IAccountService {
     public abstract boolean isLoggedIn();
 
-    public abstract void login();
+    public abstract void loginWithPhoneNumber(String number, String password);
 
-    public abstract void signupWithPhoneNumber(String number);
+    public abstract void signupWithPhoneNumber(String number, String password);
 
     private static final class CppProxy extends IAccountService
     {
@@ -44,19 +44,19 @@ public abstract class IAccountService {
         private native boolean native_isLoggedIn(long _nativeRef);
 
         @Override
-        public void login()
+        public void loginWithPhoneNumber(String number, String password)
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            native_login(this.nativeRef);
+            native_loginWithPhoneNumber(this.nativeRef, number, password);
         }
-        private native void native_login(long _nativeRef);
+        private native void native_loginWithPhoneNumber(long _nativeRef, String number, String password);
 
         @Override
-        public void signupWithPhoneNumber(String number)
+        public void signupWithPhoneNumber(String number, String password)
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            native_signupWithPhoneNumber(this.nativeRef, number);
+            native_signupWithPhoneNumber(this.nativeRef, number, password);
         }
-        private native void native_signupWithPhoneNumber(long _nativeRef, String number);
+        private native void native_signupWithPhoneNumber(long _nativeRef, String number, String password);
     }
 }

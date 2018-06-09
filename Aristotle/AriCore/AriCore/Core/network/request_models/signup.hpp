@@ -21,5 +21,7 @@ namespace ari {
         
         // config params
         void setPhoneNumber(const std::string& phoneNumber);
+        
+        void setPassword(const std::string& password);
     };
 }

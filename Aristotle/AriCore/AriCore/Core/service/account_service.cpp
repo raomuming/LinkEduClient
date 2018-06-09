@@ -16,17 +16,20 @@ namespace ari {
     {
         return false;
     }
-    
-    void AccountService::login()
+
+    void AccountService::loginWithPhoneNumber(const std::string & number, const std::string & password)
     {
-        auto requestModel = std::make_shared<LoginUsingPhoneNumber>();
-        NetworkManager::instance()->addRequest(requestModel);
+        auto loginModel = std::make_shared<LoginUsingPhoneNumber>();
+        loginModel->setPhoneNumber(number);
+        loginModel->setPassword(password);
+        NetworkManager::instance()->addRequest(loginModel);
     }
-    
-    void AccountService::signupWithPhoneNumber(const std::string & number)
+
+    void AccountService::signupWithPhoneNumber(const std::string & number, const std::string & password)
     {
-        auto requestModel = std::make_shared<Signup>();
-        requestModel->setPhoneNumber(number);
-        NetworkManager::instance()->addRequest(requestModel);
+        auto signupModel = std::make_shared<Signup>();
+        signupModel->setPhoneNumber(number);
+        signupModel->setPassword(password);
+        NetworkManager::instance()->addRequest(signupModel);
     }
 }
