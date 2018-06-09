@@ -3,6 +3,7 @@
 
 #import "AriIAccountService+Private.h"
 #import "AriIAccountService.h"
+#import "AriILoginCallback+Private.h"
 #import "DJICppWrapperCache+Private.h"
 #import "DJIError.h"
 #import "DJIMarshal+Private.h"
@@ -38,10 +39,12 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
 }
 
 - (void)loginWithPhoneNumber:(nonnull NSString *)number
-                    password:(nonnull NSString *)password {
+                    password:(nonnull NSString *)password
+                    callback:(nullable id<AriILoginCallback>)callback {
     try {
         _cppRefHandle.get()->loginWithPhoneNumber(::djinni::String::toCpp(number),
-                                                  ::djinni::String::toCpp(password));
+                                                  ::djinni::String::toCpp(password),
+                                                  ::djinni_generated::ILoginCallback::toCpp(callback));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

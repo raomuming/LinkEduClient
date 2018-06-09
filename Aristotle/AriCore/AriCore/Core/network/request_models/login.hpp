@@ -10,9 +10,12 @@
 
 #include "../http_model.hpp"
 
+#include "../../../Api/gen/i_login_callback.hpp"
+
 namespace ari {
     class LoginUsingPhoneNumber : public HTTPModel {
     public:
+        LoginUsingPhoneNumber(const std::shared_ptr<ILoginCallback> callback);
         
         std::string httpMethod() override;
         
@@ -23,5 +26,8 @@ namespace ari {
         void setPhoneNumber(const std::string& phoneNumber);
         
         void setPassword(const std::string& password);
+        
+    private:
+        std::shared_ptr<ILoginCallback> _callback;
     };
 }

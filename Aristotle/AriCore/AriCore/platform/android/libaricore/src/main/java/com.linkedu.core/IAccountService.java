@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class IAccountService {
     public abstract boolean isLoggedIn();
 
-    public abstract void loginWithPhoneNumber(String number, String password);
+    public abstract void loginWithPhoneNumber(String number, String password, ILoginCallback callback);
 
     public abstract void signupWithPhoneNumber(String number, String password);
 
@@ -44,12 +44,12 @@ public abstract class IAccountService {
         private native boolean native_isLoggedIn(long _nativeRef);
 
         @Override
-        public void loginWithPhoneNumber(String number, String password)
+        public void loginWithPhoneNumber(String number, String password, ILoginCallback callback)
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            native_loginWithPhoneNumber(this.nativeRef, number, password);
+            native_loginWithPhoneNumber(this.nativeRef, number, password, callback);
         }
-        private native void native_loginWithPhoneNumber(long _nativeRef, String number, String password);
+        private native void native_loginWithPhoneNumber(long _nativeRef, String number, String password, ILoginCallback callback);
 
         @Override
         public void signupWithPhoneNumber(String number, String password)

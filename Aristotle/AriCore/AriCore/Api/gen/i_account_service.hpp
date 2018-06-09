@@ -3,9 +3,12 @@
 
 #pragma once
 
+#include <memory>
 #include <string>
 
 namespace ari {
+
+class ILoginCallback;
 
 class IAccountService {
 public:
@@ -13,7 +16,7 @@ public:
 
     virtual bool isLoggedIn() = 0;
 
-    virtual void loginWithPhoneNumber(const std::string & number, const std::string & password) = 0;
+    virtual void loginWithPhoneNumber(const std::string & number, const std::string & password, const std::shared_ptr<ILoginCallback> & callback) = 0;
 
     virtual void signupWithPhoneNumber(const std::string & number, const std::string & password) = 0;
 };

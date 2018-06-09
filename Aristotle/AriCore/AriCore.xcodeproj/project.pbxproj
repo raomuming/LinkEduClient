@@ -15,6 +15,10 @@
 		A40EDD8620BDB2A40057A585 /* libPocoNetd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8520BDB2A40057A585 /* libPocoNetd.a */; };
 		A40EDD8820BDB3500057A585 /* libPocoCryptod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8720BDB34F0057A585 /* libPocoCryptod.a */; };
 		A40EDD8A20BDB3DE0057A585 /* libPocoJSONd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */; };
+		A434B57B20CC2D85006A7E20 /* i_login_callback.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A434B57A20CC2D85006A7E20 /* i_login_callback.hpp */; };
+		A434B57F20CC2DDD006A7E20 /* AriILoginCallback+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A434B57C20CC2DDD006A7E20 /* AriILoginCallback+Private.h */; };
+		A434B58020CC2DDD006A7E20 /* AriILoginCallback+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A434B57D20CC2DDD006A7E20 /* AriILoginCallback+Private.mm */; };
+		A434B58120CC2DDD006A7E20 /* AriILoginCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = A434B57E20CC2DDD006A7E20 /* AriILoginCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB303D20C23BB6006CD59B /* http_task.cpp */; };
 		A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB303E20C23BB6006CD59B /* http_task.hpp */; };
 		A4BB304420C25EA8006CD59B /* login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB304220C25EA8006CD59B /* login.cpp */; };
@@ -55,6 +59,10 @@
 		A40EDD8520BDB2A40057A585 /* libPocoNetd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNetd.a; path = "third-party/libs/debug/libPocoNetd.a"; sourceTree = "<group>"; };
 		A40EDD8720BDB34F0057A585 /* libPocoCryptod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoCryptod.a; path = "third-party/libs/debug/libPocoCryptod.a"; sourceTree = "<group>"; };
 		A40EDD8920BDB3DE0057A585 /* libPocoJSONd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoJSONd.a; path = "third-party/libs/debug/libPocoJSONd.a"; sourceTree = "<group>"; };
+		A434B57A20CC2D85006A7E20 /* i_login_callback.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_login_callback.hpp; sourceTree = "<group>"; };
+		A434B57C20CC2DDD006A7E20 /* AriILoginCallback+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriILoginCallback+Private.h"; path = "AriCore/Objc/gen/AriILoginCallback+Private.h"; sourceTree = SOURCE_ROOT; };
+		A434B57D20CC2DDD006A7E20 /* AriILoginCallback+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriILoginCallback+Private.mm"; path = "AriCore/Objc/gen/AriILoginCallback+Private.mm"; sourceTree = SOURCE_ROOT; };
+		A434B57E20CC2DDD006A7E20 /* AriILoginCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriILoginCallback.h; path = AriCore/Objc/gen/AriILoginCallback.h; sourceTree = SOURCE_ROOT; };
 		A4BB303D20C23BB6006CD59B /* http_task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_task.cpp; sourceTree = "<group>"; };
 		A4BB303E20C23BB6006CD59B /* http_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_task.hpp; sourceTree = "<group>"; };
 		A4BB304220C25EA8006CD59B /* login.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = login.cpp; sourceTree = "<group>"; };
@@ -215,6 +223,9 @@
 		A4CA6E6620BA8BC600EBB3F7 /* gen */ = {
 			isa = PBXGroup;
 			children = (
+				A434B57E20CC2DDD006A7E20 /* AriILoginCallback.h */,
+				A434B57C20CC2DDD006A7E20 /* AriILoginCallback+Private.h */,
+				A434B57D20CC2DDD006A7E20 /* AriILoginCallback+Private.mm */,
 				A4CA6E7B20BAA4CF00EBB3F7 /* AriIAccountService.h */,
 				A4CA6E7920BAA4CF00EBB3F7 /* AriIAccountService+Private.h */,
 				A4CA6E7A20BAA4CF00EBB3F7 /* AriIAccountService+Private.mm */,
@@ -246,6 +257,7 @@
 		A4CA6E8A20BC405C00EBB3F7 /* gen */ = {
 			isa = PBXGroup;
 			children = (
+				A434B57A20CC2D85006A7E20 /* i_login_callback.hpp */,
 				A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */,
 				A4CA6E8B20BC40C300EBB3F7 /* service_factory.hpp */,
 			);
@@ -273,11 +285,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A434B58120CC2DDD006A7E20 /* AriILoginCallback.h in Headers */,
 				A4CA6E7E20BAA4CF00EBB3F7 /* AriIAccountService.h in Headers */,
 				A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */,
 				A4CA6E6B20BA8BE200EBB3F7 /* AriServiceFactory+Private.h in Headers */,
+				A434B57F20CC2DDD006A7E20 /* AriILoginCallback+Private.h in Headers */,
 				A40EDD7720BD91990057A585 /* network_manager.hpp in Headers */,
 				A4CA6E6C20BA8BE200EBB3F7 /* AriServiceFactory.h in Headers */,
+				A434B57B20CC2D85006A7E20 /* i_login_callback.hpp in Headers */,
 				A4BB304920C296EF006CD59B /* signup.hpp in Headers */,
 				A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */,
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
@@ -369,6 +384,7 @@
 				A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
 				A4BB304B20C29C71006CD59B /* http_model.cpp in Sources */,
+				A434B58020CC2DDD006A7E20 /* AriILoginCallback+Private.mm in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
 				A4BB304820C296EF006CD59B /* signup.cpp in Sources */,
 			);

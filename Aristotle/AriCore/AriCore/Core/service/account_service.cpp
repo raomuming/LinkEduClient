@@ -11,15 +11,17 @@
 #include "../network/request_models/signup.hpp"
 #include "../network/network_manager.hpp"
 
+#include "../../Api/gen/i_login_callback.hpp"
+
 namespace ari {
     bool AccountService::isLoggedIn()
     {
         return false;
     }
 
-    void AccountService::loginWithPhoneNumber(const std::string & number, const std::string & password)
+    void AccountService::loginWithPhoneNumber(const std::string & number, const std::string & password, const std::shared_ptr<ILoginCallback> & callback)
     {
-        auto loginModel = std::make_shared<LoginUsingPhoneNumber>();
+        auto loginModel = std::make_shared<LoginUsingPhoneNumber>(callback);
         loginModel->setPhoneNumber(number);
         loginModel->setPassword(password);
         NetworkManager::instance()->addRequest(loginModel);

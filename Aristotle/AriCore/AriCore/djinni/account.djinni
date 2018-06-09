@@ -1,6 +1,10 @@
 
+i_login_callback = interface +j +o {
+	on_login(success: bool);
+}
+
 i_account_service = interface +c {
 	is_logged_in(): bool;
-	login_with_phone_number(number: string, password: string);
+	login_with_phone_number(number: string, password: string, callback: i_login_callback);
 	signup_with_phone_number(number: string, password: string);
 }

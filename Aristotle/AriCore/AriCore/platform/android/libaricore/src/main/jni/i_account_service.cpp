@@ -3,6 +3,7 @@
 
 #include "i_account_service.hpp"  // my header
 #include "Marshal.hpp"
+#include "i_login_callback.hpp"
 
 namespace djinni_generated {
 
@@ -29,13 +30,14 @@ CJNIEXPORT jboolean JNICALL Java_com_linkedu_core_IAccountService_00024CppProxy_
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT void JNICALL Java_com_linkedu_core_IAccountService_00024CppProxy_native_1loginWithPhoneNumber(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_number, jstring j_password)
+CJNIEXPORT void JNICALL Java_com_linkedu_core_IAccountService_00024CppProxy_native_1loginWithPhoneNumber(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_number, jstring j_password, jobject j_callback)
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::ari::IAccountService>(nativeRef);
         ref->loginWithPhoneNumber(::djinni::String::toCpp(jniEnv, j_number),
-                                  ::djinni::String::toCpp(jniEnv, j_password));
+                                  ::djinni::String::toCpp(jniEnv, j_password),
+                                  ::djinni_generated::ILoginCallback::toCpp(jniEnv, j_callback));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 

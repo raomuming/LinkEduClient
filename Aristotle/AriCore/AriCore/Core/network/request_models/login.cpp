@@ -12,6 +12,11 @@
 using Poco::Dynamic::Var;
 
 namespace ari {
+    
+    LoginUsingPhoneNumber::LoginUsingPhoneNumber(const std::shared_ptr<ILoginCallback> callback)
+    : _callback(callback)
+    {}
+    
     std::string LoginUsingPhoneNumber::httpMethod()
     {
         return HTTPRequest::HTTP_POST;
@@ -26,6 +31,10 @@ namespace ari {
     {
         auto phoneNumber = jsonConfig->getString("phone_number");
         auto name = jsonConfig->getString("name");
+        
+        if (_callback) {
+            _callback->onLogin(status == HTTPResponse::HTTP_OK);
+        }
     }
     
     void LoginUsingPhoneNumber::setPhoneNumber(const std::string& phoneNumber)
