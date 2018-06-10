@@ -111,5 +111,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let loginViewController = LoginViewController()
         self.window?.rootViewController = UINavigationController(rootViewController: loginViewController)
     }
+    
+    func switchToTabBarViewController() {
+        let root = RootTabBarViewController()
+        switchToNewViewController(newViewController: root)
+    }
+    
+    func switchToNewViewController(newViewController: UIViewController) {
+        DispatchQueue.main.async {
+            if self.window?.rootViewController == nil {
+                self.window?.rootViewController = newViewController
+                return;
+            }
+            
+            let snapShot = self.window?.snapshotView(afterScreenUpdates: true)
+            newViewController.view.addSubview(snapShot!)
+            self.window?.rootViewController = newViewController
+            UIView.animate(withDuration: 0.3, animations: {
+                snapShot?.layer.opacity = 0
+                snapShot?.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5)
+            })
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                snapShot?.layer.opacity = 0
+                snapShot?.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5)
+            }, completion: { (finished) in
+                snapShot?.removeFromSuperview()
+            })
+        }
+    }
 }
 

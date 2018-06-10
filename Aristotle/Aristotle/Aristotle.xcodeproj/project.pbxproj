@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A434B59720CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59620CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift */; };
+		A434B59920CD1E5E006A7E20 /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */; };
 		A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */; };
 		A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */; };
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 		349585FC1C15FED299B54C61 /* Pods_Aristotle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aristotle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCA9B2C88E607B3F7FB6211 /* Pods-Aristotle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aristotle.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Aristotle/Pods-Aristotle.debug.xcconfig"; sourceTree = "<group>"; };
 		A434B59620CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumberLoginViewController+LoginCallback.swift"; sourceTree = "<group>"; };
+		A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOnlyTextCell.swift; sourceTree = "<group>"; };
 		A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputViewController.swift; sourceTree = "<group>"; };
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				A4BB305220C2FF4E006CD59B /* common */,
 				A4CA6E3420B921D200EBB3F7 /* Login */,
 				A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */,
+				A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */,
 				A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */,
 				A4CA6B7220B88E2C00EBB3F7 /* Info.plist */,
 				A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */,
@@ -270,6 +273,7 @@
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
 				A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,
+				A434B59920CD1E5E006A7E20 /* RootTabBarViewController.swift in Sources */,
 				A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
