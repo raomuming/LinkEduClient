@@ -11,6 +11,7 @@ import UIKit
 class RootTabBarViewController : UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initViewController()
         self.createSubViewControllers()
     }
     
@@ -38,5 +39,9 @@ class RootTabBarViewController : UITabBarController {
         
         let tabArray = [courseNav, messageNav, meNav]
         self.viewControllers = tabArray
+    }
+    
+    fileprivate func initViewController() {
+        self.view.backgroundColor = UIColor.white
     }
 }

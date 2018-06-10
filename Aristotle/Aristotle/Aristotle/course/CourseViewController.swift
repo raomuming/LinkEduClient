@@ -10,4 +10,23 @@ import UIKit
 
 class CourseViewController : UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.initViewController()
+        self.configRightBarButtonItems()
+    }
+    
+    fileprivate func configRightBarButtonItems() {
+        let plusItem = UIBarButtonItem(image: UIImage(named: "plus"), style: .plain, target: self, action: #selector(addCourse))
+        self.navigationItem.rightBarButtonItems = [plusItem]
+    }
+    
+    fileprivate func initViewController() {
+        self.view.backgroundColor = UIColor.white
+    }
+    
+    @objc func addCourse() {
+        let createCourseViewController = CreateCourseViewController()
+        self.navigationController?.pushViewController(createCourseViewController, animated: true)
+    }
 }

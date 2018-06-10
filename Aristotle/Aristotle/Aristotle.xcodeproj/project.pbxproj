@@ -13,6 +13,7 @@
 		A434B59F20CD32A3006A7E20 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59E20CD32A3006A7E20 /* CourseViewController.swift */; };
 		A434B5A220CD330D006A7E20 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A120CD330D006A7E20 /* MessageViewController.swift */; };
 		A434B5A520CD3367006A7E20 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A420CD3367006A7E20 /* MeViewController.swift */; };
+		A434B5A920CD847D006A7E20 /* CreateCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A820CD847D006A7E20 /* CreateCourseViewController.swift */; };
 		A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */; };
 		A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */; };
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		A434B59E20CD32A3006A7E20 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		A434B5A120CD330D006A7E20 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		A434B5A420CD3367006A7E20 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		A434B5A820CD847D006A7E20 /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
 		A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOnlyTextCell.swift; sourceTree = "<group>"; };
 		A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputViewController.swift; sourceTree = "<group>"; };
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A434B59E20CD32A3006A7E20 /* CourseViewController.swift */,
+				A434B5A820CD847D006A7E20 /* CreateCourseViewController.swift */,
 			);
 			path = course;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				A434B5A520CD3367006A7E20 /* MeViewController.swift in Sources */,
 				A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */,
+				A434B5A920CD847D006A7E20 /* CreateCourseViewController.swift in Sources */,
 				A434B59720CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift in Sources */,
 				A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */,
 				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
