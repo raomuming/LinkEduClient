@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A434B59720CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59620CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift */; };
 		A434B59920CD1E5E006A7E20 /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */; };
+		A434B59C20CD2FDD006A7E20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59B20CD2FDD006A7E20 /* HomeViewController.swift */; };
+		A434B59F20CD32A3006A7E20 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59E20CD32A3006A7E20 /* CourseViewController.swift */; };
+		A434B5A220CD330D006A7E20 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A120CD330D006A7E20 /* MessageViewController.swift */; };
+		A434B5A520CD3367006A7E20 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A420CD3367006A7E20 /* MeViewController.swift */; };
 		A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */; };
 		A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */; };
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
@@ -40,6 +44,10 @@
 		5CCA9B2C88E607B3F7FB6211 /* Pods-Aristotle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aristotle.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Aristotle/Pods-Aristotle.debug.xcconfig"; sourceTree = "<group>"; };
 		A434B59620CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumberLoginViewController+LoginCallback.swift"; sourceTree = "<group>"; };
 		A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
+		A434B59B20CD2FDD006A7E20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A434B59E20CD32A3006A7E20 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		A434B5A120CD330D006A7E20 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		A434B5A420CD3367006A7E20 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOnlyTextCell.swift; sourceTree = "<group>"; };
 		A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputViewController.swift; sourceTree = "<group>"; };
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +85,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A434B59A20CD2F8F006A7E20 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				A434B59B20CD2FDD006A7E20 /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		A434B59D20CD3280006A7E20 /* course */ = {
+			isa = PBXGroup;
+			children = (
+				A434B59E20CD32A3006A7E20 /* CourseViewController.swift */,
+			);
+			path = course;
+			sourceTree = "<group>";
+		};
+		A434B5A020CD32C6006A7E20 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				A434B5A120CD330D006A7E20 /* MessageViewController.swift */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		A434B5A320CD3346006A7E20 /* me */ = {
+			isa = PBXGroup;
+			children = (
+				A434B5A420CD3367006A7E20 /* MeViewController.swift */,
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
 		A4BB305220C2FF4E006CD59B /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,8 +146,12 @@
 		A4CA6B6220B88E2C00EBB3F7 /* Aristotle */ = {
 			isa = PBXGroup;
 			children = (
+				A434B5A320CD3346006A7E20 /* me */,
 				A4BB305220C2FF4E006CD59B /* common */,
-				A4CA6E3420B921D200EBB3F7 /* Login */,
+				A434B5A020CD32C6006A7E20 /* message */,
+				A434B59D20CD3280006A7E20 /* course */,
+				A434B59A20CD2F8F006A7E20 /* home */,
+				A4CA6E3420B921D200EBB3F7 /* login */,
 				A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */,
 				A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */,
 				A4CA6B6D20B88E2C00EBB3F7 /* Assets.xcassets */,
@@ -127,7 +171,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A4CA6E3420B921D200EBB3F7 /* Login */ = {
+		A4CA6E3420B921D200EBB3F7 /* login */ = {
 			isa = PBXGroup;
 			children = (
 				A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */,
@@ -136,7 +180,7 @@
 				A4CA6E3C20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift */,
 				A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */,
 			);
-			path = Login;
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,14 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A434B5A520CD3367006A7E20 /* MeViewController.swift in Sources */,
 				A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */,
 				A434B59720CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift in Sources */,
 				A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */,
 				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
+				A434B59C20CD2FDD006A7E20 /* HomeViewController.swift in Sources */,
 				A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */,
+				A434B59F20CD32A3006A7E20 /* CourseViewController.swift in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,
 				A434B59920CD1E5E006A7E20 /* RootTabBarViewController.swift in Sources */,
+				A434B5A220CD330D006A7E20 /* MessageViewController.swift in Sources */,
 				A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
