@@ -27,6 +27,7 @@ class CourseViewController : UIViewController {
     
     @objc func addCourse() {
         let createCourseViewController = CreateCourseViewController()
+        createCourseViewController.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(createCourseViewController, animated: true)
     }
 }
