@@ -81,4 +81,17 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.showDatePicker()
+    }
+    
+    fileprivate func showDatePicker() {
+        let alert = UIAlertController(style: .actionSheet, title: "选择时间")
+        alert.addDatePicker(mode: .date, date: nil) { (date) in
+            
+        }
+        alert.addAction(title: "OK", style: .cancel)
+        alert.show()
+    }
 }
