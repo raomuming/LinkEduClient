@@ -14,7 +14,8 @@
 		A434B5A220CD330D006A7E20 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A120CD330D006A7E20 /* MessageViewController.swift */; };
 		A434B5A520CD3367006A7E20 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A420CD3367006A7E20 /* MeViewController.swift */; };
 		A434B5A920CD847D006A7E20 /* CreateCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5A820CD847D006A7E20 /* CreateCourseViewController.swift */; };
-		A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */; };
+		A434B5AB20CE573D006A7E20 /* TextFieldOnlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5AA20CE573D006A7E20 /* TextFieldOnlyCell.swift */; };
+		A434B5AD20CE68C7006A7E20 /* TextViewOnlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B5AC20CE68C7006A7E20 /* TextViewOnlyCell.swift */; };
 		A4BB305920C436E2006CD59B /* PhoneNumberInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */; };
 		A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */; };
 		A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6B6A20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld */; };
@@ -50,7 +51,8 @@
 		A434B5A120CD330D006A7E20 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		A434B5A420CD3367006A7E20 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		A434B5A820CD847D006A7E20 /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
-		A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOnlyTextCell.swift; sourceTree = "<group>"; };
+		A434B5AA20CE573D006A7E20 /* TextFieldOnlyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldOnlyCell.swift; sourceTree = "<group>"; };
+		A434B5AC20CE68C7006A7E20 /* TextViewOnlyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewOnlyCell.swift; sourceTree = "<group>"; };
 		A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputViewController.swift; sourceTree = "<group>"; };
 		A4CA6B6020B88E2C00EBB3F7 /* Aristotle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aristotle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CA6B6320B88E2C00EBB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +125,8 @@
 		A4BB305220C2FF4E006CD59B /* common */ = {
 			isa = PBXGroup;
 			children = (
-				A4BB305320C2FF9C006CD59B /* InputOnlyTextCell.swift */,
+				A434B5AA20CE573D006A7E20 /* TextFieldOnlyCell.swift */,
+				A434B5AC20CE68C7006A7E20 /* TextViewOnlyCell.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -149,8 +152,8 @@
 		A4CA6B6220B88E2C00EBB3F7 /* Aristotle */ = {
 			isa = PBXGroup;
 			children = (
-				A434B5A320CD3346006A7E20 /* me */,
 				A4BB305220C2FF4E006CD59B /* common */,
+				A434B5A320CD3346006A7E20 /* me */,
 				A434B5A020CD32C6006A7E20 /* message */,
 				A434B59D20CD3280006A7E20 /* course */,
 				A434B59A20CD2F8F006A7E20 /* home */,
@@ -319,14 +322,15 @@
 				A434B59720CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift in Sources */,
 				A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */,
 				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
+				A434B5AB20CE573D006A7E20 /* TextFieldOnlyCell.swift in Sources */,
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
 				A434B59C20CD2FDD006A7E20 /* HomeViewController.swift in Sources */,
 				A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */,
 				A434B59F20CD32A3006A7E20 /* CourseViewController.swift in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,
+				A434B5AD20CE68C7006A7E20 /* TextViewOnlyCell.swift in Sources */,
 				A434B59920CD1E5E006A7E20 /* RootTabBarViewController.swift in Sources */,
 				A434B5A220CD330D006A7E20 /* MessageViewController.swift in Sources */,
-				A4BB305420C2FF9C006CD59B /* InputOnlyTextCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

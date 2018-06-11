@@ -16,7 +16,7 @@
 namespace ari {
     bool AccountService::isLoggedIn()
     {
-        return false;
+        return true;
     }
 
     void AccountService::loginWithPhoneNumber(const std::string & number, const std::string & password, const std::shared_ptr<ILoginCallback> & callback)

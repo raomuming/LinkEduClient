@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         
         if isLoggedin() {
-            
+            self.setupTabBarViewController()
         }
         else {
             self.setupLoginViewController()
@@ -110,6 +110,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupLoginViewController() {
         let loginViewController = LoginViewController()
         self.window?.rootViewController = UINavigationController(rootViewController: loginViewController)
+    }
+    
+    func setupTabBarViewController() {
+        let rootViewController = RootTabBarViewController()
+        self.window?.rootViewController = rootViewController
     }
     
     func switchToTabBarViewController() {
