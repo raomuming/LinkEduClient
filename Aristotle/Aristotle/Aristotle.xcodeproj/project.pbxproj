@@ -28,6 +28,7 @@
 		A4CA6E3920B9B78300EBB3F7 /* AriCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4CA6B8F20B88F7100EBB3F7 /* AriCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E3A20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift */; };
 		A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA6E3C20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift */; };
+		A4DA347120CFFB9200F3202F /* PresentedTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA347020CFFB9200F3202F /* PresentedTextFieldViewController.swift */; };
 		E63E3A3C0AFEA2F7796DE4E0 /* Pods_Aristotle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349585FC1C15FED299B54C61 /* Pods_Aristotle.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		A4CA6E3520B9874F00EBB3F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A4CA6E3A20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberLoginViewController.swift; sourceTree = "<group>"; };
 		A4CA6E3C20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberSignupViewController.swift; sourceTree = "<group>"; };
+		A4DA347020CFFB9200F3202F /* PresentedTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedTextFieldViewController.swift; sourceTree = "<group>"; };
 		BBE675648F80C74587F3E406 /* Pods-Aristotle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aristotle.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Aristotle/Pods-Aristotle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,9 +143,9 @@
 		A4BB305220C2FF4E006CD59B /* common */ = {
 			isa = PBXGroup;
 			children = (
+				A4DA346F20CFFB5500F3202F /* viewcontroller */,
+				A4DA346E20CFFAB800F3202F /* uicomponent */,
 				A434B5AE20CE9CDB006A7E20 /* alert */,
-				A434B5AA20CE573D006A7E20 /* TextFieldOnlyCell.swift */,
-				A434B5AC20CE68C7006A7E20 /* TextViewOnlyCell.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -204,6 +206,23 @@
 				A4BB305820C436E2006CD59B /* PhoneNumberInputViewController.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		A4DA346E20CFFAB800F3202F /* uicomponent */ = {
+			isa = PBXGroup;
+			children = (
+				A434B5AC20CE68C7006A7E20 /* TextViewOnlyCell.swift */,
+				A434B5AA20CE573D006A7E20 /* TextFieldOnlyCell.swift */,
+			);
+			path = uicomponent;
+			sourceTree = "<group>";
+		};
+		A4DA346F20CFFB5500F3202F /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				A4DA347020CFFB9200F3202F /* PresentedTextFieldViewController.swift */,
+			);
+			path = viewcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +364,7 @@
 				A434B59C20CD2FDD006A7E20 /* HomeViewController.swift in Sources */,
 				A4CA6E3B20B9BA3100EBB3F7 /* PhoneNumberLoginViewController.swift in Sources */,
 				A434B5B220CE9DE3006A7E20 /* PickerViewViewController.swift in Sources */,
+				A4DA347120CFFB9200F3202F /* PresentedTextFieldViewController.swift in Sources */,
 				A434B5B020CE9DB4006A7E20 /* UIAlertController+Extension.swift in Sources */,
 				A434B59F20CD32A3006A7E20 /* CourseViewController.swift in Sources */,
 				A4CA6B6420B88E2C00EBB3F7 /* AppDelegate.swift in Sources */,

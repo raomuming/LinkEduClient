@@ -56,8 +56,10 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         let row = indexPath.row
         
         if section == 0 && row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "course_title") as! TextFieldOnlyCell
-            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "course_setting")
+            cell?.textLabel?.text = "课程名称"
+            cell?.accessoryType = .disclosureIndicator
+            return cell!
         } else if section == 1 && row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "course_info") as! TextViewOnlyCell
             cell.placeHolder = "课程简介"
@@ -83,7 +85,14 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.showDatePicker()
+        let section = indexPath.section
+        let row = indexPath.row
+        
+        if section == 0 && row == 0 {
+            self.showCourseTitleEidtViewController()
+        } else {
+            self.showDatePicker()
+        }
     }
     
     fileprivate func showDatePicker() {
@@ -93,5 +102,13 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         }
         alert.addAction(title: "OK", style: .cancel)
         alert.show()
+    }
+}
+
+extension CreateCourseViewController {
+    func showCourseTitleEidtViewController() {
+        let courseNameEditViewController = PresentedTextFieldViewController()
+        let nav = UINavigationController(rootViewController: courseNameEditViewController)
+        self.navigationController?.present(nav, animated: true, completion: nil)
     }
 }
