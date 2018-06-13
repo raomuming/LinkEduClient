@@ -27,6 +27,8 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
             make.edges.equalTo(self.view)
         }
         
+        self.initNavBar()
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(TextFieldOnlyCell.self, forCellReuseIdentifier: "course_title")
@@ -35,6 +37,19 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
+    }
+    
+    fileprivate func initNavBar() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(doCancelAction))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "创建", style: .plain, target: self, action: #selector(doFinishAction))
+    }
+    
+    @objc func doCancelAction() {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func doFinishAction() {
+        
     }
     
     // delegate
