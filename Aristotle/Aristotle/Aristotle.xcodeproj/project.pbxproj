@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A400272C20D142890079D9D8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400272B20D142890079D9D8 /* UIColorExtension.swift */; };
 		A434B59720CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59620CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift */; };
 		A434B59920CD1E5E006A7E20 /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */; };
 		A434B59C20CD2FDD006A7E20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434B59B20CD2FDD006A7E20 /* HomeViewController.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		349585FC1C15FED299B54C61 /* Pods_Aristotle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aristotle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCA9B2C88E607B3F7FB6211 /* Pods-Aristotle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aristotle.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Aristotle/Pods-Aristotle.debug.xcconfig"; sourceTree = "<group>"; };
+		A400272B20D142890079D9D8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		A434B59620CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumberLoginViewController+LoginCallback.swift"; sourceTree = "<group>"; };
 		A434B59820CD1E5E006A7E20 /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		A434B59B20CD2FDD006A7E20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A400272A20D1425A0079D9D8 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				A400272B20D142890079D9D8 /* UIColorExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		A434B59A20CD2F8F006A7E20 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		A4BB305220C2FF4E006CD59B /* common */ = {
 			isa = PBXGroup;
 			children = (
+				A400272A20D1425A0079D9D8 /* extension */,
 				A4DA346F20CFFB5500F3202F /* viewcontroller */,
 				A4DA346E20CFFAB800F3202F /* uicomponent */,
 				A434B5AE20CE9CDB006A7E20 /* alert */,
@@ -359,6 +370,7 @@
 				A434B59720CC31F0006A7E20 /* PhoneNumberLoginViewController+LoginCallback.swift in Sources */,
 				A4CA6E3D20B9BAE700EBB3F7 /* PhoneNumberSignupViewController.swift in Sources */,
 				A4CA6E3620B9874F00EBB3F7 /* LoginViewController.swift in Sources */,
+				A400272C20D142890079D9D8 /* UIColorExtension.swift in Sources */,
 				A434B5AB20CE573D006A7E20 /* TextFieldOnlyCell.swift in Sources */,
 				A4CA6B6C20B88E2C00EBB3F7 /* Aristotle.xcdatamodeld in Sources */,
 				A434B59C20CD2FDD006A7E20 /* HomeViewController.swift in Sources */,

@@ -63,6 +63,9 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         } else if section == 1 && row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "course_info") as! TextViewOnlyCell
             cell.placeHolder = "课程简介"
+            cell.maxHeight = 200
+            cell.minHeight = 100
+            cell.delegate = self
             return cell
         } else if section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "course_setting")
@@ -110,5 +113,12 @@ extension CreateCourseViewController {
         let courseNameEditViewController = PresentedTextFieldViewController()
         let nav = UINavigationController(rootViewController: courseNameEditViewController)
         self.navigationController?.present(nav, animated: true, completion: nil)
+    }
+}
+
+extension CreateCourseViewController: TextViewOnlyCellDelegate {
+    func onTextChange() {
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
 }

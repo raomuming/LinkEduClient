@@ -9,14 +9,25 @@
 import UIKit
 import SnapKit
 
+protocol TextViewOnlyCellDelegate: NSObjectProtocol {
+    func onTextChange() -> Void
+}
+
 class TextViewOnlyCell : UITableViewCell, UITextViewDelegate {
+    
+    var minHeight: CGFloat?
+    var maxHeight: CGFloat?
     var textView: UITextView?
     
     var placeHolder: String = "" {
         didSet {
-            textView?.text = placeHolder
+            self.placeHolderLabel?.text = placeHolder
         }
     }
+    
+    fileprivate var placeHolderLabel: UILabel?
+    
+    weak var delegate: TextViewOnlyCellDelegate?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,31 +41,48 @@ class TextViewOnlyCell : UITableViewCell, UITextViewDelegate {
     
     fileprivate func initSubViews() {
         textView = UITextView()
+        textView?.font = UIFont.systemFont(ofSize: 18)
         textView?.delegate = self
         self.contentView.addSubview(textView!)
         textView?.snp.makeConstraints({ (make) in
             make.top.equalTo(10)
             make.left.equalTo(10)
             make.right.equalTo(-10)
-            make.height.equalTo(100)
+            make.height.equalTo(minHeight ?? 100)
             make.bottom.equalTo(-10)
+        })
+        
+        placeHolderLabel = UILabel()
+        placeHolderLabel?.font = UIFont.systemFont(ofSize: 18)
+        placeHolderLabel?.textColor = UIColor.lightGray
+        placeHolderLabel?.numberOfLines = 0
+        textView?.addSubview(placeHolderLabel!)
+        placeHolderLabel?.snp.makeConstraints({ (make) in
+            make.left.equalTo(2)
+            make.right.equalTo(-2)
+            make.top.equalTo(3)
+            make.top.height.equalTo(30)
         })
     }
     
     // delegate
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if textView.text == placeHolder {
-            textView.text = ""
-        }
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if textView.text.isEmpty {
-            textView.text = placeHolder
-        }
-    }
-    
     func textViewDidChange(_ textView: UITextView) {
+        placeHolderLabel?.isHidden = !textView.text.isEmpty
+        let size: CGSize = textView.sizeThatFits(CGSize.init(width: textView.frame.size.width, height: CGFloat.greatestFiniteMagnitude))
+        var newHeight = size.height + textView.textContainerInset.top + textView.textContainerInset.bottom
+        if let maxHeight = self.maxHeight, newHeight > maxHeight {
+            newHeight = maxHeight
+        }
         
+        if let minHeight = self.minHeight, newHeight < minHeight {
+            newHeight = minHeight
+        } else if newHeight < 100 {
+            newHeight = 100
+        }
+        
+        self.textView?.snp.updateConstraints({ (make) in
+            make.height.equalTo(newHeight)
+        })
+        delegate?.onTextChange()
     }
 }
