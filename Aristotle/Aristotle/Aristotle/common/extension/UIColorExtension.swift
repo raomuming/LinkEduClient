@@ -13,7 +13,11 @@ extension UIColor {
         self.init(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: 1)
     }
     
-    func lightGray() -> UIColor {
+    class func lightGray() -> UIColor {
         return UIColor(red: 226, green: 226, blue: 226)
+    }
+    
+    class func defaultPlaceHolderColor() -> UIColor {
+        return UIColor(red: 199, green: 199, blue: 205)
     }
 }

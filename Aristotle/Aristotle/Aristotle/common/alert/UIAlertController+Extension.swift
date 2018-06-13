@@ -30,6 +30,10 @@ extension UIAlertController {
     }
     
     public func show(animated: Bool = true, vibrate: Bool = false, style: UIBlurEffectStyle? = nil, completion: (() -> Void)? = nil) {
+        showIn(viewController: UIApplication.shared.keyWindow?.rootViewController, animated: animated, vibrate: vibrate, style: style, completion: completion)
+    }
+    
+    public func showIn(viewController: UIViewController?, animated: Bool = true, vibrate: Bool = false, style: UIBlurEffectStyle? = nil, completion: (() -> Void)? = nil) {
         if let style = style {
             for subview in view.subviews {
                 if let subview = subview as? UIVisualEffectView {
@@ -39,7 +43,7 @@ extension UIAlertController {
         }
         
         DispatchQueue.main.async {
-            UIApplication.shared.keyWindow?.rootViewController?.present(self, animated: animated, completion: completion)
+            viewController?.present(self, animated: animated, completion: completion)
             if vibrate {
                 
             }

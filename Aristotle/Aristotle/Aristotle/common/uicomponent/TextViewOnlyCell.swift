@@ -54,14 +54,14 @@ class TextViewOnlyCell : UITableViewCell, UITextViewDelegate {
         
         placeHolderLabel = UILabel()
         placeHolderLabel?.font = UIFont.systemFont(ofSize: 18)
-        placeHolderLabel?.textColor = UIColor.lightGray
+        placeHolderLabel?.textColor = UIColor.defaultPlaceHolderColor()
         placeHolderLabel?.numberOfLines = 0
         textView?.addSubview(placeHolderLabel!)
         placeHolderLabel?.snp.makeConstraints({ (make) in
-            make.left.equalTo(2)
+            make.left.equalToSuperview()
             make.right.equalTo(-2)
             make.top.equalTo(3)
-            make.top.height.equalTo(30)
+            make.height.equalTo(30)
         })
     }
     

@@ -56,10 +56,9 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         let row = indexPath.row
         
         if section == 0 && row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "course_setting")
-            cell?.textLabel?.text = "课程名称"
-            cell?.accessoryType = .disclosureIndicator
-            return cell!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "course_title") as! TextFieldOnlyCell
+            cell.placeHolder = "课程名称"
+            return cell
         } else if section == 1 && row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "course_info") as! TextViewOnlyCell
             cell.placeHolder = "课程简介"
@@ -104,7 +103,7 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
             
         }
         alert.addAction(title: "OK", style: .cancel)
-        alert.show()
+        alert.showIn(viewController: self)
     }
 }
 

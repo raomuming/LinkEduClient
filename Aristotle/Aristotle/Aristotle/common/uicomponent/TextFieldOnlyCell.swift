@@ -11,7 +11,13 @@ import SnapKit
 
 class TextFieldOnlyCell : UITableViewCell {
     
-    var textField: UITextField?
+    fileprivate var textField: UITextField?
+    
+    var placeHolder: String = "" {
+        didSet {
+            textField?.placeholder = placeHolder
+        }
+    }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -25,7 +31,8 @@ class TextFieldOnlyCell : UITableViewCell {
     
     fileprivate func initSubViews() {
         textField = UITextField()
-        textField?.placeholder = "课程名称"
+        textField?.font = UIFont.systemFont(ofSize: 20)
+        textField?.clearButtonMode = .whileEditing
         self.contentView.addSubview(textField!)
         textField?.snp.makeConstraints({ (make) in
             make.height.equalTo(30)
