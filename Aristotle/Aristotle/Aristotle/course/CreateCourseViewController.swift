@@ -11,6 +11,9 @@ import SnapKit
 
 class CreateCourseViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var startDate: Date?
+    var endDate: Date?
+    
     var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -34,6 +37,7 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         tableView.register(TextFieldOnlyCell.self, forCellReuseIdentifier: "course_title")
         tableView.register(TextViewOnlyCell.self, forCellReuseIdentifier: "course_info")
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "course_setting")
+        tableView.register(SelectDetailCell.self, forCellReuseIdentifier: "select_detail")
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
@@ -82,18 +86,21 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
             cell.delegate = self
             return cell
         } else if section == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "course_setting")
-            cell?.accessoryType = .disclosureIndicator
+            let cell = tableView.dequeueReusableCell(withIdentifier: "select_detail") as! SelectDetailCell
             
             if row == 0 {
-                cell?.textLabel?.text = "选择教师"
+                cell.title = "选择教师"
             } else if row == 1 {
-                cell?.textLabel?.text = "开始日期"
+                cell.title = "开始日期"
+                cell.detail = Date().description
             } else if row == 2 {
-                cell?.textLabel?.text = "结束日期"
+                cell.title = "结束日期"
+                cell.detail = Date().description
             }
             
-            return cell!
+            cell.arrowImage = UIImage(named: "right_arrow")
+            
+            return cell
         }
         
         //TODO: add image on section 3
@@ -106,16 +113,30 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         let row = indexPath.row
         
         if section == 0 && row == 0 {
-            self.showCourseTitleEidtViewController()
-        } else {
-            self.showDatePicker()
+            //self.showCourseTitleEidtViewController()
+        } else if section == 1 {
+            
+        } else if section == 2 {
+            if row == 0 {
+                
+            } else if row == 1 || row == 2 {
+                self.showDatePicker(indexPath: indexPath)
+            }
         }
     }
     
-    fileprivate func showDatePicker() {
+    fileprivate func showDatePicker(indexPath: IndexPath) {
         let alert = UIAlertController(style: .actionSheet, title: "选择时间")
         alert.addDatePicker(mode: .date, date: nil) { (date) in
+            let cell = self.tableView.cellForRow(at: indexPath) as! SelectDetailCell
+            cell.detail = date.description
+            let row = indexPath.row
             
+            if row == 1 {
+                self.startDate = date
+            } else if row == 2 {
+                self.endDate = date
+            }
         }
         alert.addAction(title: "OK", style: .cancel)
         alert.showIn(viewController: self)
