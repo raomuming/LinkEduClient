@@ -25,6 +25,14 @@
 		A434B59220CC30D3006A7E20 /* AriIAccountService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A434B58920CC30D3006A7E20 /* AriIAccountService+Private.h */; };
 		A434B59320CC30D3006A7E20 /* AriILoginCallback+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A434B58A20CC30D3006A7E20 /* AriILoginCallback+Private.mm */; };
 		A434B59420CC30D3006A7E20 /* AriServiceFactory+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A434B58B20CC30D3006A7E20 /* AriServiceFactory+Private.mm */; };
+		A44490A720E9063F000E5930 /* course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A44490A520E9063F000E5930 /* course.cpp */; };
+		A44490A820E9063F000E5930 /* course.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A44490A620E9063F000E5930 /* course.hpp */; };
+		A44490AB20E9085D000E5930 /* course_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A44490A920E9085D000E5930 /* course_service.cpp */; };
+		A44490AC20E9085D000E5930 /* course_service.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A44490AA20E9085D000E5930 /* course_service.hpp */; };
+		A44490AE20E90954000E5930 /* i_course_service.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A44490AD20E90954000E5930 /* i_course_service.hpp */; };
+		A44490B220E90972000E5930 /* AriICourseService.h in Headers */ = {isa = PBXBuildFile; fileRef = A44490AF20E90972000E5930 /* AriICourseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A44490B320E90972000E5930 /* AriICourseService+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A44490B020E90972000E5930 /* AriICourseService+Private.mm */; };
+		A44490B420E90972000E5930 /* AriICourseService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A44490B120E90972000E5930 /* AriICourseService+Private.h */; };
 		A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB303D20C23BB6006CD59B /* http_task.cpp */; };
 		A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB303E20C23BB6006CD59B /* http_task.hpp */; };
 		A4BB304420C25EA8006CD59B /* login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB304220C25EA8006CD59B /* login.cpp */; };
@@ -48,6 +56,8 @@
 		A4CA6E8720BAF06700EBB3F7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CA6E8520BAF06700EBB3F7 /* libssl.a */; };
 		A4CA6E8D20BC40C300EBB3F7 /* service_factory.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E8B20BC40C300EBB3F7 /* service_factory.hpp */; };
 		A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */; };
+		A4E852BE20EBC62F00EBFB50 /* account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E852BC20EBC62F00EBFB50 /* account.cpp */; };
+		A4E852BF20EBC62F00EBFB50 /* account.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4E852BD20EBC62F00EBFB50 /* account.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +79,14 @@
 		A434B58920CC30D3006A7E20 /* AriIAccountService+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriIAccountService+Private.h"; path = "gen/AriIAccountService+Private.h"; sourceTree = "<group>"; };
 		A434B58A20CC30D3006A7E20 /* AriILoginCallback+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriILoginCallback+Private.mm"; path = "gen/AriILoginCallback+Private.mm"; sourceTree = "<group>"; };
 		A434B58B20CC30D3006A7E20 /* AriServiceFactory+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriServiceFactory+Private.mm"; path = "gen/AriServiceFactory+Private.mm"; sourceTree = "<group>"; };
+		A44490A520E9063F000E5930 /* course.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = course.cpp; sourceTree = "<group>"; };
+		A44490A620E9063F000E5930 /* course.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = course.hpp; sourceTree = "<group>"; };
+		A44490A920E9085D000E5930 /* course_service.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = course_service.cpp; sourceTree = "<group>"; };
+		A44490AA20E9085D000E5930 /* course_service.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = course_service.hpp; sourceTree = "<group>"; };
+		A44490AD20E90954000E5930 /* i_course_service.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_course_service.hpp; sourceTree = "<group>"; };
+		A44490AF20E90972000E5930 /* AriICourseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriICourseService.h; path = gen/AriICourseService.h; sourceTree = "<group>"; };
+		A44490B020E90972000E5930 /* AriICourseService+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriICourseService+Private.mm"; path = "gen/AriICourseService+Private.mm"; sourceTree = "<group>"; };
+		A44490B120E90972000E5930 /* AriICourseService+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriICourseService+Private.h"; path = "gen/AriICourseService+Private.h"; sourceTree = "<group>"; };
 		A4BB303D20C23BB6006CD59B /* http_task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_task.cpp; sourceTree = "<group>"; };
 		A4BB303E20C23BB6006CD59B /* http_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_task.hpp; sourceTree = "<group>"; };
 		A4BB304220C25EA8006CD59B /* login.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = login.cpp; sourceTree = "<group>"; };
@@ -94,6 +112,8 @@
 		A4CA6E8520BAF06700EBB3F7 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "third-party/libs/debug/libssl.a"; sourceTree = "<group>"; };
 		A4CA6E8B20BC40C300EBB3F7 /* service_factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = service_factory.hpp; sourceTree = "<group>"; };
 		A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_account_service.hpp; sourceTree = "<group>"; };
+		A4E852BC20EBC62F00EBFB50 /* account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = account.cpp; sourceTree = "<group>"; };
+		A4E852BD20EBC62F00EBFB50 /* account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = account.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +139,9 @@
 		A434B58220CC30BA006A7E20 /* gen */ = {
 			isa = PBXGroup;
 			children = (
+				A44490AF20E90972000E5930 /* AriICourseService.h */,
+				A44490B120E90972000E5930 /* AriICourseService+Private.h */,
+				A44490B020E90972000E5930 /* AriICourseService+Private.mm */,
 				A434B58520CC30D3006A7E20 /* AriIAccountService.h */,
 				A434B58920CC30D3006A7E20 /* AriIAccountService+Private.h */,
 				A434B58320CC30D2006A7E20 /* AriIAccountService+Private.mm */,
@@ -135,6 +158,8 @@
 		A4424AB320C6E8ED004D5199 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A4E852BC20EBC62F00EBFB50 /* account.cpp */,
+				A4E852BD20EBC62F00EBFB50 /* account.hpp */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -146,6 +171,8 @@
 				A4BB304320C25EA8006CD59B /* login.hpp */,
 				A4BB304620C296EF006CD59B /* signup.cpp */,
 				A4BB304720C296EF006CD59B /* signup.hpp */,
+				A44490A520E9063F000E5930 /* course.cpp */,
+				A44490A620E9063F000E5930 /* course.hpp */,
 			);
 			path = request_models;
 			sourceTree = "<group>";
@@ -249,6 +276,8 @@
 			children = (
 				A4CA6E8020BAAC1900EBB3F7 /* account_service.cpp */,
 				A4CA6E8120BAAC1900EBB3F7 /* account_service.hpp */,
+				A44490A920E9085D000E5930 /* course_service.cpp */,
+				A44490AA20E9085D000E5930 /* course_service.hpp */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -256,6 +285,7 @@
 		A4CA6E8A20BC405C00EBB3F7 /* gen */ = {
 			isa = PBXGroup;
 			children = (
+				A44490AD20E90954000E5930 /* i_course_service.hpp */,
 				A434B57A20CC2D85006A7E20 /* i_login_callback.hpp */,
 				A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */,
 				A4CA6E8B20BC40C300EBB3F7 /* service_factory.hpp */,
@@ -288,8 +318,13 @@
 				A434B59120CC30D3006A7E20 /* AriServiceFactory.h in Headers */,
 				A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */,
 				A40EDD7720BD91990057A585 /* network_manager.hpp in Headers */,
+				A44490B420E90972000E5930 /* AriICourseService+Private.h in Headers */,
 				A434B57B20CC2D85006A7E20 /* i_login_callback.hpp in Headers */,
+				A4E852BF20EBC62F00EBFB50 /* account.hpp in Headers */,
+				A44490AE20E90954000E5930 /* i_course_service.hpp in Headers */,
 				A434B58F20CC30D3006A7E20 /* AriServiceFactory+Private.h in Headers */,
+				A44490A820E9063F000E5930 /* course.hpp in Headers */,
+				A44490B220E90972000E5930 /* AriICourseService.h in Headers */,
 				A4BB304920C296EF006CD59B /* signup.hpp in Headers */,
 				A434B59220CC30D3006A7E20 /* AriIAccountService+Private.h in Headers */,
 				A434B58D20CC30D3006A7E20 /* AriILoginCallback+Private.h in Headers */,
@@ -304,6 +339,7 @@
 				A434B58E20CC30D3006A7E20 /* AriIAccountService.h in Headers */,
 				A4CA6E5320BA818300EBB3F7 /* DJICppWrapperCache+Private.h in Headers */,
 				A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */,
+				A44490AC20E9085D000E5930 /* course_service.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44490AB20E9085D000E5930 /* course_service.cpp in Sources */,
 				A40EDD7620BD91990057A585 /* network_manager.cpp in Sources */,
 				A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */,
 				A4BB304420C25EA8006CD59B /* login.cpp in Sources */,
@@ -382,9 +419,12 @@
 				A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
 				A434B59420CC30D3006A7E20 /* AriServiceFactory+Private.mm in Sources */,
+				A4E852BE20EBC62F00EBFB50 /* account.cpp in Sources */,
 				A4BB304B20C29C71006CD59B /* http_model.cpp in Sources */,
+				A44490B320E90972000E5930 /* AriICourseService+Private.mm in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
 				A434B59320CC30D3006A7E20 /* AriILoginCallback+Private.mm in Sources */,
+				A44490A720E9063F000E5930 /* course.cpp in Sources */,
 				A4BB304820C296EF006CD59B /* signup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

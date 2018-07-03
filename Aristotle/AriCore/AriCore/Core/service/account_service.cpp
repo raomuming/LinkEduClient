@@ -16,14 +16,27 @@
 namespace ari {
     bool AccountService::isLoggedIn()
     {
-        return true;
+        return false;
     }
 
     void AccountService::loginWithPhoneNumber(const std::string & number, const std::string & password, const std::shared_ptr<ILoginCallback> & callback)
     {
-        auto loginModel = std::make_shared<LoginUsingPhoneNumber>(callback);
+        auto self = shared_from_this();
+        auto loginModel = std::make_shared<LoginUsingPhoneNumber>();
         loginModel->setPhoneNumber(number);
         loginModel->setPassword(password);
+        
+        
+        loginModel->setCallback([self, callback](HTTPResponse::HTTPStatus status, AbstractConfiguration::Ptr json){
+            if (status == HTTPResponse::HTTP_OK) {
+                self->initAccount(json);
+            }
+            
+            if (callback) {
+                callback->onLogin(status == HTTPResponse::HTTP_OK);
+            }
+        });
+        
         NetworkManager::instance()->addRequest(loginModel);
     }
 
@@ -33,5 +46,10 @@ namespace ari {
         signupModel->setPhoneNumber(number);
         signupModel->setPassword(password);
         NetworkManager::instance()->addRequest(signupModel);
+    }
+    
+    // private function
+    void AccountService::initAccount(AbstractConfiguration::Ptr json) {
+        auto name = json->getString("name");
     }
 }

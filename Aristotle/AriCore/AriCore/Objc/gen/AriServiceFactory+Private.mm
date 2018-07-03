@@ -4,6 +4,7 @@
 #import "AriServiceFactory+Private.h"
 #import "AriServiceFactory.h"
 #import "AriIAccountService+Private.h"
+#import "AriICourseService+Private.h"
 #import "DJICppWrapperCache+Private.h"
 #import "DJIError.h"
 #include <exception>
@@ -34,6 +35,13 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     try {
         auto objcpp_result_ = ::ari::ServiceFactory::accountService();
         return ::djinni_generated::IAccountService::fromCpp(objcpp_result_);
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
++ (nullable AriICourseService *)courseService {
+    try {
+        auto objcpp_result_ = ::ari::ServiceFactory::courseService();
+        return ::djinni_generated::ICourseService::fromCpp(objcpp_result_);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

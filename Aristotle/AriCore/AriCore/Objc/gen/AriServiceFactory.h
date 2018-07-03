@@ -3,10 +3,13 @@
 
 #import <Foundation/Foundation.h>
 @class AriIAccountService;
+@class AriICourseService;
 
 
 @interface AriServiceFactory : NSObject
 
 + (nullable AriIAccountService *)accountService;
+
++ (nullable AriICourseService *)courseService;
 
 @end

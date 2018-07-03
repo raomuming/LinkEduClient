@@ -1,6 +1,8 @@
 
 @import "./account.djinni"
+@import "./course.djinni"
 
 service_factory = interface + c {
 	static accountService(): i_account_service;
+	static courseService(): i_course_service;
 }

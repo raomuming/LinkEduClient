@@ -8,6 +8,7 @@
 
 #include "../gen/service_factory.hpp"
 #include "../../Core/service/account_service.hpp"
+#include "../../Core/service/course_service.hpp"
 
 #include <mutex>
 #include <memory>
@@ -22,5 +23,16 @@ namespace ari {
         });
         
         return accountService;
+    }
+    
+    std::shared_ptr<ICourseService> ServiceFactory::courseService()
+    {
+        static std::once_flag flag;
+        static std::shared_ptr<ICourseService> courseService;
+        std::call_once(flag, [&]{
+            courseService = std::make_shared<CourseService>();
+        });
+        
+        return courseService;
     }
 }

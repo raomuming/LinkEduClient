@@ -56,8 +56,7 @@ namespace ari {
         
         HTTPResponse res;
         std::istream& rs = session.receiveResponse(res);
-        auto result = std::make_shared<JSONConfiguration>(rs);
-        
+        AbstractConfiguration::Ptr result = new JSONConfiguration(rs);
         _model->onRequestFinished(res.getStatus(), result);
     }
 }

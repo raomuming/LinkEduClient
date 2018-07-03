@@ -8,12 +8,15 @@
 namespace ari {
 
 class IAccountService;
+class ICourseService;
 
 class ServiceFactory {
 public:
     virtual ~ServiceFactory() {}
 
     static std::shared_ptr<IAccountService> accountService();
+
+    static std::shared_ptr<ICourseService> courseService();
 };
 
 }  // namespace ari

@@ -3,6 +3,7 @@
 
 #include "service_factory.hpp"  // my header
 #include "i_account_service.hpp"
+#include "i_course_service.hpp"
 
 namespace djinni_generated {
 
@@ -25,6 +26,15 @@ CJNIEXPORT jobject JNICALL Java_com_linkedu_core_ServiceFactory_accountService(J
         DJINNI_FUNCTION_PROLOGUE0(jniEnv);
         auto r = ::ari::ServiceFactory::accountService();
         return ::djinni::release(::djinni_generated::IAccountService::fromCpp(jniEnv, r));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
+}
+
+CJNIEXPORT jobject JNICALL Java_com_linkedu_core_ServiceFactory_courseService(JNIEnv* jniEnv, jobject /*this*/)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE0(jniEnv);
+        auto r = ::ari::ServiceFactory::courseService();
+        return ::djinni::release(::djinni_generated::ICourseService::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 

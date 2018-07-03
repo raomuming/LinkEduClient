@@ -8,6 +8,8 @@
 
 #include "http_model.hpp"
 
+#include <memory>
+
 namespace ari {
     HTTPModel::HTTPModel()
     : _object(new Object())
@@ -19,5 +21,17 @@ namespace ari {
         _object->stringify(out);
         
         return out.str();
+    }
+    
+    void HTTPModel::onRequestFinished(HTTPResponse::HTTPStatus status, AbstractConfiguration::Ptr jsonConfig)
+    {
+        if (_callback) {
+            _callback(status, jsonConfig);
+        }
+    }
+    
+    void HTTPModel::setCallback(ModelCallback callback)
+    {
+        _callback = callback;
     }
 }

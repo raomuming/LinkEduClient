@@ -22,11 +22,6 @@ namespace ari {
         return "https://link-edu.net/t/register";
     }
     
-    void Signup::onRequestFinished(HTTPResponse::HTTPStatus status, const std::shared_ptr<JSONConfiguration> jsonConfig)
-    {
-        
-    }
-    
     void Signup::setPhoneNumber(const std::string& phoneNumber)
     {
         _object->set("phone_number", Var(phoneNumber.c_str()));

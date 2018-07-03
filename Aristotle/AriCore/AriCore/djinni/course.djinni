@@ -1,0 +1,5 @@
+
+
+i_course_service = interface +c {
+	
+}

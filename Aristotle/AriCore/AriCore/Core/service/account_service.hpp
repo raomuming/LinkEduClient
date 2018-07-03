@@ -9,9 +9,17 @@
 #pragma once
 
 #include "../../Api/gen/i_account_service.hpp"
+#include "../model/account.hpp"
+#include "Poco/Util/AbstractConfiguration.h"
+
+#include <memory>
+
+using Poco::Util::AbstractConfiguration;
 
 namespace ari {
-    class AccountService : public IAccountService {
+    class JSONConfiguration;
+
+    class AccountService : public IAccountService, public std::enable_shared_from_this<AccountService> {
     public:
         bool isLoggedIn() override;
         
@@ -20,5 +28,9 @@ namespace ari {
         void signupWithPhoneNumber(const std::string & number, const std::string & password) override;
         
     private:
+        void initAccount(AbstractConfiguration::Ptr json);
+        
+    private:
+        std::shared_ptr<Account> _account;
     };
 }
