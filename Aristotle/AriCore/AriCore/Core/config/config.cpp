@@ -12,14 +12,24 @@
 #include "../../Api/gen/i_pal_bundle.hpp"
 
 #include <mutex>
+#include <iostream>
+#include <iomanip>
+#include <string>
 
 #include "Poco/Util/Application.h"
 #include "Poco/File.h"
+#include "Poco/FileStream.h"
+#include "Poco/StreamCopier.h"
+#include "Poco/JSON/Parser.h"
+#include "Poco/Dynamic/Var.h"
 
 using Poco::File;
 using Poco::FileException;
-
-const std::string filePath = "./config.json";
+using Poco::FileStream;
+using Poco::StreamCopier;
+using Poco::JSON::Parser;
+using Poco::DynamicAny;
+using Poco::Dynamic::Var;
 
 namespace ari {
     std::shared_ptr<Config> Config::instance()
@@ -42,41 +52,78 @@ namespace ari {
             try {
                 bool success = file->createFile();
                 if (!success) {
-                    
+                    std::cout << "can not create file" << std::endl;
+                    assert(0);
+                    return;
                 }
             } catch (FileException e) {
                 std::cout << e.message();
+                return;
             }
+        }
+        
+        FileStream fs(path);
+        std::string jsonStr;
+        fs >> jsonStr;
+        
+        if (!jsonStr.empty()) {
+            Parser iparser;
+            std::istringstream istr(jsonStr);
+            iparser.parse(istr);
+            DynamicAny result = iparser.result();
+            _object = result.extract<Object::Ptr>();
+        }
+        else {
+            _object = new Object;
         }
     }
     
     void Config::setString(const std::string& key, const std::string& value)
     {
-        
+        _object->set(key, Var(value.c_str()));
+        save();
     }
     
     std::string Config::getString(const std::string& key)
     {
-        return "";
+        return _object->get(key).extract<std::string>();
     }
     
-    void Config::setInt(const std::string& key, int value)
+    void Config::setInt(const std::string& key, int64_t value)
     {
-        
+        _object->set(key, Var(value));
+        save();
     }
     
-    int Config::getInt(const std::string& key)
+    int64_t Config::getInt(const std::string& key)
     {
-        return 0;
+        int64_t value = 0;
+        if (_object->has(key)) {
+            value = _object->get(key).extract<Poco::Int64>();
+        }
+        return value;
     }
     
     void Config::setBool(const std::string& key, bool value)
     {
-        
+        _object->set(key, Var(value));
+        save();
     }
     
     bool Config::getBool(const std::string& key)
     {
-        return true;
+        return _object->get(key).extract<bool>();
+    }
+    
+    void Config::save()
+    {
+        std::ostringstream out;
+        _object->stringify(out);
+        
+        auto fileStorageProvider = Pal::getPalBundle()->getFileStorageProvider();
+        auto path = fileStorageProvider->getDocumentPath("config.json");
+        
+        FileStream fs(path);
+        fs << out.str();
     }
 }

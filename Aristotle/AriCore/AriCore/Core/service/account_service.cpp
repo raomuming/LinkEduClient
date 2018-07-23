@@ -24,7 +24,10 @@ namespace ari {
     
     bool AccountService::isLoggedIn()
     {
-        return false;
+        auto config = Config::instance();
+        auto id = config->getInt("_id");
+        
+        return id > 0;
     }
 
     void AccountService::loginWithPhoneNumber(const std::string & number, const std::string & password, const std::shared_ptr<ILoginCallback> & callback)
@@ -68,7 +71,8 @@ namespace ari {
         _account->setName(name.empty() ? phoneNumber : name);
         _account->setPhoneNumber(phoneNumber);
         
-        Config::instance();
+        auto config = Config::instance();
+        config->setInt("_id", (int64_t)id);
         
         _account->unlock();
     }
