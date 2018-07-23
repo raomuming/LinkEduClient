@@ -19,7 +19,7 @@ namespace ari {
     
     std::string CreateCourse::path()
     {
-        return "https://link-edu.net/t/course";
+        return "https://link-edu.net/course";
     }
     
     void CreateCourse::setName(const std::string& name)

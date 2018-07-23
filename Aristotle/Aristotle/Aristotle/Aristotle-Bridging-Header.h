@@ -7,3 +7,4 @@
 //
 
 #import "Objc/all.h"
+#import "Objc/impl/AriApplication.h"

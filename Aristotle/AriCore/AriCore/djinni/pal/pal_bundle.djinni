@@ -1,0 +1,9 @@
+
+i_pal_bundle = interface +j +o {
+	get_file_storage_provider(): i_file_storage_provider;
+}
+
+pal = interface +c {
+	static set_pal_bundle(bundle: i_pal_bundle);
+	static get_pal_bundle(): i_pal_bundle;
+}

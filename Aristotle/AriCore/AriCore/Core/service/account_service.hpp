@@ -21,6 +21,8 @@ namespace ari {
 
     class AccountService : public IAccountService, public std::enable_shared_from_this<AccountService> {
     public:
+        AccountService();
+        
         bool isLoggedIn() override;
         
         void loginWithPhoneNumber(const std::string & number, const std::string & password, const std::shared_ptr<ILoginCallback> & callback) override;

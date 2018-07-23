@@ -2,6 +2,9 @@
 @import "./account.djinni"
 @import "./course.djinni"
 
+@import "./pal/pal_bundle.djinni"
+@import "./pal/file_storage_provider.djinni"
+
 service_factory = interface + c {
 	static accountService(): i_account_service;
 	static courseService(): i_course_service;

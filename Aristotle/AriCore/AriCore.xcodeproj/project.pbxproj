@@ -33,6 +33,22 @@
 		A44490B220E90972000E5930 /* AriICourseService.h in Headers */ = {isa = PBXBuildFile; fileRef = A44490AF20E90972000E5930 /* AriICourseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A44490B320E90972000E5930 /* AriICourseService+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A44490B020E90972000E5930 /* AriICourseService+Private.mm */; };
 		A44490B420E90972000E5930 /* AriICourseService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A44490B120E90972000E5930 /* AriICourseService+Private.h */; };
+		A487FA8B21060C03000F508F /* i_pal_bundle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A487FA8821060C03000F508F /* i_pal_bundle.hpp */; };
+		A487FA8C21060C03000F508F /* i_file_storage_provider.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A487FA8921060C03000F508F /* i_file_storage_provider.hpp */; };
+		A487FA8D21060C03000F508F /* pal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A487FA8A21060C03000F508F /* pal.hpp */; };
+		A487FA8F21060C6C000F508F /* pal_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A487FA8E21060C6C000F508F /* pal_impl.cpp */; };
+		A487FA9921060E3A000F508F /* AriPal.h in Headers */ = {isa = PBXBuildFile; fileRef = A487FA9021060E39000F508F /* AriPal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A487FA9A21060E3A000F508F /* AriPal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A487FA9121060E39000F508F /* AriPal+Private.h */; };
+		A487FA9B21060E3A000F508F /* AriIFileStorageProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A487FA9221060E39000F508F /* AriIFileStorageProvider+Private.h */; };
+		A487FA9C21060E3A000F508F /* AriIPalBundle+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A487FA9321060E39000F508F /* AriIPalBundle+Private.h */; };
+		A487FA9D21060E3A000F508F /* AriIPalBundle+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A487FA9421060E3A000F508F /* AriIPalBundle+Private.mm */; };
+		A487FA9E21060E3A000F508F /* AriPal+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A487FA9521060E3A000F508F /* AriPal+Private.mm */; };
+		A487FA9F21060E3A000F508F /* AriIFileStorageProvider+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A487FA9621060E3A000F508F /* AriIFileStorageProvider+Private.mm */; };
+		A487FAA021060E3A000F508F /* AriIPalBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = A487FA9721060E3A000F508F /* AriIPalBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A487FAA121060E3A000F508F /* AriIFileStorageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A487FA9821060E3A000F508F /* AriIFileStorageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A487FAA521060F29000F508F /* PalBundleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A487FAA421060F29000F508F /* PalBundleImpl.m */; };
+		A487FAA72106111A000F508F /* FileStorageProviderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A487FAA62106111A000F508F /* FileStorageProviderImpl.m */; };
+		A487FAAB210613EB000F508F /* AriApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = A487FAAA210613EB000F508F /* AriApplication.m */; };
 		A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB303D20C23BB6006CD59B /* http_task.cpp */; };
 		A4BB304020C23BB6006CD59B /* http_task.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4BB303E20C23BB6006CD59B /* http_task.hpp */; };
 		A4BB304420C25EA8006CD59B /* login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4BB304220C25EA8006CD59B /* login.cpp */; };
@@ -58,6 +74,10 @@
 		A4CA6E8E20BC40C300EBB3F7 /* i_account_service.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */; };
 		A4E852BE20EBC62F00EBFB50 /* account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E852BC20EBC62F00EBFB50 /* account.cpp */; };
 		A4E852BF20EBC62F00EBFB50 /* account.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4E852BD20EBC62F00EBFB50 /* account.hpp */; };
+		A4EB1FCA20FCCD68004DAEAA /* lockable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4EB1FC820FCCD68004DAEAA /* lockable.cpp */; };
+		A4EB1FCB20FCCD68004DAEAA /* lockable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4EB1FC920FCCD68004DAEAA /* lockable.hpp */; };
+		A4EB1FCF20FCD656004DAEAA /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4EB1FCD20FCD656004DAEAA /* config.cpp */; };
+		A4EB1FD020FCD656004DAEAA /* config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4EB1FCE20FCD656004DAEAA /* config.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +107,25 @@
 		A44490AF20E90972000E5930 /* AriICourseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriICourseService.h; path = gen/AriICourseService.h; sourceTree = "<group>"; };
 		A44490B020E90972000E5930 /* AriICourseService+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriICourseService+Private.mm"; path = "gen/AriICourseService+Private.mm"; sourceTree = "<group>"; };
 		A44490B120E90972000E5930 /* AriICourseService+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriICourseService+Private.h"; path = "gen/AriICourseService+Private.h"; sourceTree = "<group>"; };
+		A487FA8821060C03000F508F /* i_pal_bundle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_pal_bundle.hpp; sourceTree = "<group>"; };
+		A487FA8921060C03000F508F /* i_file_storage_provider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_file_storage_provider.hpp; sourceTree = "<group>"; };
+		A487FA8A21060C03000F508F /* pal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pal.hpp; sourceTree = "<group>"; };
+		A487FA8E21060C6C000F508F /* pal_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pal_impl.cpp; sourceTree = "<group>"; };
+		A487FA9021060E39000F508F /* AriPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriPal.h; path = gen/AriPal.h; sourceTree = "<group>"; };
+		A487FA9121060E39000F508F /* AriPal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriPal+Private.h"; path = "gen/AriPal+Private.h"; sourceTree = "<group>"; };
+		A487FA9221060E39000F508F /* AriIFileStorageProvider+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriIFileStorageProvider+Private.h"; path = "gen/AriIFileStorageProvider+Private.h"; sourceTree = "<group>"; };
+		A487FA9321060E39000F508F /* AriIPalBundle+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AriIPalBundle+Private.h"; path = "gen/AriIPalBundle+Private.h"; sourceTree = "<group>"; };
+		A487FA9421060E3A000F508F /* AriIPalBundle+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriIPalBundle+Private.mm"; path = "gen/AriIPalBundle+Private.mm"; sourceTree = "<group>"; };
+		A487FA9521060E3A000F508F /* AriPal+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriPal+Private.mm"; path = "gen/AriPal+Private.mm"; sourceTree = "<group>"; };
+		A487FA9621060E3A000F508F /* AriIFileStorageProvider+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AriIFileStorageProvider+Private.mm"; path = "gen/AriIFileStorageProvider+Private.mm"; sourceTree = "<group>"; };
+		A487FA9721060E3A000F508F /* AriIPalBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriIPalBundle.h; path = gen/AriIPalBundle.h; sourceTree = "<group>"; };
+		A487FA9821060E3A000F508F /* AriIFileStorageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AriIFileStorageProvider.h; path = gen/AriIFileStorageProvider.h; sourceTree = "<group>"; };
+		A487FAA321060EFE000F508F /* PalBundleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalBundleImpl.h; sourceTree = "<group>"; };
+		A487FAA421060F29000F508F /* PalBundleImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalBundleImpl.m; sourceTree = "<group>"; };
+		A487FAA62106111A000F508F /* FileStorageProviderImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileStorageProviderImpl.m; sourceTree = "<group>"; };
+		A487FAA821061132000F508F /* FileStorageProviderImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileStorageProviderImpl.h; sourceTree = "<group>"; };
+		A487FAA9210613D3000F508F /* AriApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AriApplication.h; sourceTree = "<group>"; };
+		A487FAAA210613EB000F508F /* AriApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AriApplication.m; sourceTree = "<group>"; };
 		A4BB303D20C23BB6006CD59B /* http_task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_task.cpp; sourceTree = "<group>"; };
 		A4BB303E20C23BB6006CD59B /* http_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_task.hpp; sourceTree = "<group>"; };
 		A4BB304220C25EA8006CD59B /* login.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = login.cpp; sourceTree = "<group>"; };
@@ -114,6 +153,10 @@
 		A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_account_service.hpp; sourceTree = "<group>"; };
 		A4E852BC20EBC62F00EBFB50 /* account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = account.cpp; sourceTree = "<group>"; };
 		A4E852BD20EBC62F00EBFB50 /* account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = account.hpp; sourceTree = "<group>"; };
+		A4EB1FC820FCCD68004DAEAA /* lockable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lockable.cpp; sourceTree = "<group>"; };
+		A4EB1FC920FCCD68004DAEAA /* lockable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lockable.hpp; sourceTree = "<group>"; };
+		A4EB1FCD20FCD656004DAEAA /* config.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = config.cpp; sourceTree = "<group>"; };
+		A4EB1FCE20FCD656004DAEAA /* config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +182,15 @@
 		A434B58220CC30BA006A7E20 /* gen */ = {
 			isa = PBXGroup;
 			children = (
+				A487FA9821060E3A000F508F /* AriIFileStorageProvider.h */,
+				A487FA9221060E39000F508F /* AriIFileStorageProvider+Private.h */,
+				A487FA9621060E3A000F508F /* AriIFileStorageProvider+Private.mm */,
+				A487FA9721060E3A000F508F /* AriIPalBundle.h */,
+				A487FA9321060E39000F508F /* AriIPalBundle+Private.h */,
+				A487FA9421060E3A000F508F /* AriIPalBundle+Private.mm */,
+				A487FA9021060E39000F508F /* AriPal.h */,
+				A487FA9121060E39000F508F /* AriPal+Private.h */,
+				A487FA9521060E3A000F508F /* AriPal+Private.mm */,
 				A44490AF20E90972000E5930 /* AriICourseService.h */,
 				A44490B120E90972000E5930 /* AriICourseService+Private.h */,
 				A44490B020E90972000E5930 /* AriICourseService+Private.mm */,
@@ -160,8 +212,23 @@
 			children = (
 				A4E852BC20EBC62F00EBFB50 /* account.cpp */,
 				A4E852BD20EBC62F00EBFB50 /* account.hpp */,
+				A4EB1FC820FCCD68004DAEAA /* lockable.cpp */,
+				A4EB1FC920FCCD68004DAEAA /* lockable.hpp */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		A487FAA221060E9E000F508F /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				A487FAA321060EFE000F508F /* PalBundleImpl.h */,
+				A487FAA421060F29000F508F /* PalBundleImpl.m */,
+				A487FAA821061132000F508F /* FileStorageProviderImpl.h */,
+				A487FAA62106111A000F508F /* FileStorageProviderImpl.m */,
+				A487FAA9210613D3000F508F /* AriApplication.h */,
+				A487FAAA210613EB000F508F /* AriApplication.m */,
+			);
+			path = impl;
 			sourceTree = "<group>";
 		};
 		A4BB304120C25883006CD59B /* request_models */ = {
@@ -208,6 +275,7 @@
 		A4CA6B9120B8905C00EBB3F7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A4EB1FCC20FCD634004DAEAA /* config */,
 				A4424AB320C6E8ED004D5199 /* model */,
 				A4CA6E8F20BC416200EBB3F7 /* network */,
 				A4CA6E7F20BAA5A200EBB3F7 /* service */,
@@ -243,6 +311,7 @@
 		A4CA6E4220BA806C00EBB3F7 /* Objc */ = {
 			isa = PBXGroup;
 			children = (
+				A487FAA221060E9E000F508F /* impl */,
 				A434B58220CC30BA006A7E20 /* gen */,
 				A4CA6E6D20BA8CB300EBB3F7 /* all.h */,
 				A4CA6E4920BA814800EBB3F7 /* support */,
@@ -267,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				A4CA6E7520BAA3E000EBB3F7 /* service_factory_impl.cpp */,
+				A487FA8E21060C6C000F508F /* pal_impl.cpp */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -285,6 +355,9 @@
 		A4CA6E8A20BC405C00EBB3F7 /* gen */ = {
 			isa = PBXGroup;
 			children = (
+				A487FA8921060C03000F508F /* i_file_storage_provider.hpp */,
+				A487FA8821060C03000F508F /* i_pal_bundle.hpp */,
+				A487FA8A21060C03000F508F /* pal.hpp */,
 				A44490AD20E90954000E5930 /* i_course_service.hpp */,
 				A434B57A20CC2D85006A7E20 /* i_login_callback.hpp */,
 				A4CA6E8C20BC40C300EBB3F7 /* i_account_service.hpp */,
@@ -307,6 +380,15 @@
 			path = network;
 			sourceTree = "<group>";
 		};
+		A4EB1FCC20FCD634004DAEAA /* config */ = {
+			isa = PBXGroup;
+			children = (
+				A4EB1FCD20FCD656004DAEAA /* config.cpp */,
+				A4EB1FCE20FCD656004DAEAA /* config.hpp */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -317,13 +399,21 @@
 				A434B59020CC30D3006A7E20 /* AriILoginCallback.h in Headers */,
 				A434B59120CC30D3006A7E20 /* AriServiceFactory.h in Headers */,
 				A4CA6E6E20BA8CB300EBB3F7 /* all.h in Headers */,
+				A4EB1FCB20FCCD68004DAEAA /* lockable.hpp in Headers */,
+				A487FA8D21060C03000F508F /* pal.hpp in Headers */,
 				A40EDD7720BD91990057A585 /* network_manager.hpp in Headers */,
 				A44490B420E90972000E5930 /* AriICourseService+Private.h in Headers */,
+				A4EB1FD020FCD656004DAEAA /* config.hpp in Headers */,
 				A434B57B20CC2D85006A7E20 /* i_login_callback.hpp in Headers */,
 				A4E852BF20EBC62F00EBFB50 /* account.hpp in Headers */,
+				A487FA9A21060E3A000F508F /* AriPal+Private.h in Headers */,
+				A487FA8C21060C03000F508F /* i_file_storage_provider.hpp in Headers */,
+				A487FA9C21060E3A000F508F /* AriIPalBundle+Private.h in Headers */,
 				A44490AE20E90954000E5930 /* i_course_service.hpp in Headers */,
 				A434B58F20CC30D3006A7E20 /* AriServiceFactory+Private.h in Headers */,
 				A44490A820E9063F000E5930 /* course.hpp in Headers */,
+				A487FAA121060E3A000F508F /* AriIFileStorageProvider.h in Headers */,
+				A487FA8B21060C03000F508F /* i_pal_bundle.hpp in Headers */,
 				A44490B220E90972000E5930 /* AriICourseService.h in Headers */,
 				A4BB304920C296EF006CD59B /* signup.hpp in Headers */,
 				A434B59220CC30D3006A7E20 /* AriIAccountService+Private.h in Headers */,
@@ -332,6 +422,9 @@
 				A4CA6E5220BA818300EBB3F7 /* DJIError.h in Headers */,
 				A4CA6E8D20BC40C300EBB3F7 /* service_factory.hpp in Headers */,
 				A4BB304520C25EA8006CD59B /* login.hpp in Headers */,
+				A487FAA021060E3A000F508F /* AriIPalBundle.h in Headers */,
+				A487FA9B21060E3A000F508F /* AriIFileStorageProvider+Private.h in Headers */,
+				A487FA9921060E3A000F508F /* AriPal.h in Headers */,
 				A40EDD7B20BD984F0057A585 /* http_model.hpp in Headers */,
 				A4CA6E5420BA818300EBB3F7 /* DJIObjcWrapperCache+Private.h in Headers */,
 				A4CA6E8320BAAC1900EBB3F7 /* account_service.hpp in Headers */,
@@ -414,18 +507,27 @@
 				A40EDD7620BD91990057A585 /* network_manager.cpp in Sources */,
 				A4CA6E5520BA818300EBB3F7 /* DJIProxyCaches.mm in Sources */,
 				A4BB304420C25EA8006CD59B /* login.cpp in Sources */,
+				A487FA9E21060E3A000F508F /* AriPal+Private.mm in Sources */,
 				A4CA6E8220BAAC1900EBB3F7 /* account_service.cpp in Sources */,
+				A487FAA72106111A000F508F /* FileStorageProviderImpl.m in Sources */,
 				A434B58C20CC30D3006A7E20 /* AriIAccountService+Private.mm in Sources */,
+				A4EB1FCA20FCCD68004DAEAA /* lockable.cpp in Sources */,
 				A4BB303F20C23BB6006CD59B /* http_task.cpp in Sources */,
 				A4CA6E5020BA818300EBB3F7 /* DJIError.mm in Sources */,
 				A434B59420CC30D3006A7E20 /* AriServiceFactory+Private.mm in Sources */,
+				A487FA9D21060E3A000F508F /* AriIPalBundle+Private.mm in Sources */,
 				A4E852BE20EBC62F00EBFB50 /* account.cpp in Sources */,
 				A4BB304B20C29C71006CD59B /* http_model.cpp in Sources */,
 				A44490B320E90972000E5930 /* AriICourseService+Private.mm in Sources */,
 				A4CA6E7620BAA3E000EBB3F7 /* service_factory_impl.cpp in Sources */,
+				A487FAA521060F29000F508F /* PalBundleImpl.m in Sources */,
 				A434B59320CC30D3006A7E20 /* AriILoginCallback+Private.mm in Sources */,
+				A487FA8F21060C6C000F508F /* pal_impl.cpp in Sources */,
+				A487FAAB210613EB000F508F /* AriApplication.m in Sources */,
 				A44490A720E9063F000E5930 /* course.cpp in Sources */,
 				A4BB304820C296EF006CD59B /* signup.cpp in Sources */,
+				A4EB1FCF20FCD656004DAEAA /* config.cpp in Sources */,
+				A487FA9F21060E3A000F508F /* AriIFileStorageProvider+Private.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

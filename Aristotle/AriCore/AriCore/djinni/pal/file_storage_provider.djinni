@@ -1,0 +1,4 @@
+
+i_file_storage_provider = interface +o +j {
+	getDocumentPath(relative: string): string;
+}

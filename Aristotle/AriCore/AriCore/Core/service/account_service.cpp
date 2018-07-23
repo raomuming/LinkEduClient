@@ -10,10 +10,18 @@
 #include "../network/request_models/login.hpp"
 #include "../network/request_models/signup.hpp"
 #include "../network/network_manager.hpp"
+#include "../config/config.hpp"
 
 #include "../../Api/gen/i_login_callback.hpp"
 
 namespace ari {
+    
+    AccountService::AccountService()
+    : _account(std::make_shared<Account>())
+    {
+        
+    }
+    
     bool AccountService::isLoggedIn()
     {
         return false;
@@ -50,6 +58,18 @@ namespace ari {
     
     // private function
     void AccountService::initAccount(AbstractConfiguration::Ptr json) {
+        _account->lock();
+        
+        auto id = json->getInt64("_id");
         auto name = json->getString("name");
+        auto phoneNumber = json->getString("phone_number");
+        
+        _account->setId(id);
+        _account->setName(name.empty() ? phoneNumber : name);
+        _account->setPhoneNumber(phoneNumber);
+        
+        Config::instance();
+        
+        _account->unlock();
     }
 }

@@ -3,5 +3,8 @@
 
 #import "AriIAccountService.h"
 #import "AriICourseService.h"
+#import "AriIFileStorageProvider.h"
 #import "AriILoginCallback.h"
+#import "AriIPalBundle.h"
+#import "AriPal.h"
 #import "AriServiceFactory.h"

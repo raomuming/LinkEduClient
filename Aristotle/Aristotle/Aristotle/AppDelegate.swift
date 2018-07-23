@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         
+        AriApplication.initCore()
+        
         if isLoggedin() {
             self.setupTabBarViewController()
         }
