@@ -25,5 +25,7 @@ namespace ari {
         void setStartTime(int64_t startTime);
         
         void setEndTime(int64_t endTime);
+        
+        void setCreator(int64_t id);
     };
 }

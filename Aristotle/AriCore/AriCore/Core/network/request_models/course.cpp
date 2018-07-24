@@ -41,4 +41,9 @@ namespace ari {
     {
         _object->set("end_at", Var(endTime));
     }
+    
+    void CreateCourse::setCreator(int64_t id)
+    {
+        _object->set("creator", Var(id));
+    }
 }

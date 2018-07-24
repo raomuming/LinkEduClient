@@ -1,4 +1,14 @@
 
+i_create_course_info = interface +c {
+	set_name(name: string);
+	get_name(): string;
+	set_description(description: string);
+	get_description(): string;
+	set_start_time(time: i64);
+	get_start_time(): i64;
+	set_end_time(time: i64);
+	get_end_time(): i64;
+}
 
 i_course_service = interface +c {
 	

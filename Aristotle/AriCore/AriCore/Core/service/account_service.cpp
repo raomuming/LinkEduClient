@@ -76,4 +76,10 @@ namespace ari {
         
         _account->unlock();
     }
+    
+    std::shared_ptr<Account> AccountService::account()
+    {
+        return _account;
+    }
+
 }

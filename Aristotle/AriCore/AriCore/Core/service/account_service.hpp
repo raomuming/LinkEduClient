@@ -29,6 +29,8 @@ namespace ari {
 
         void signupWithPhoneNumber(const std::string & number, const std::string & password) override;
         
+        std::shared_ptr<Account> account();
+        
     private:
         void initAccount(AbstractConfiguration::Ptr json);
         
