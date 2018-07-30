@@ -3,11 +3,17 @@
 
 #pragma once
 
+#include <memory>
+
 namespace ari {
+
+class ICreateCourseInfo;
 
 class ICourseService {
 public:
     virtual ~ICourseService() {}
+
+    virtual void createCourse(const std::shared_ptr<ICreateCourseInfo> & info) = 0;
 };
 
 }  // namespace ari

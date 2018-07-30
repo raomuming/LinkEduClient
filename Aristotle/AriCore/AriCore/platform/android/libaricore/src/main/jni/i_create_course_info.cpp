@@ -95,4 +95,13 @@ CJNIEXPORT jlong JNICALL Java_com_linkedu_core_ICreateCourseInfo_00024CppProxy_n
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
+CJNIEXPORT jobject JNICALL Java_com_linkedu_core_ICreateCourseInfo_newCreateCourseInfo(JNIEnv* jniEnv, jobject /*this*/)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE0(jniEnv);
+        auto r = ::ari::ICreateCourseInfo::newCreateCourseInfo();
+        return ::djinni::release(::djinni_generated::ICreateCourseInfo::fromCpp(jniEnv, r));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
+}
+
 }  // namespace djinni_generated

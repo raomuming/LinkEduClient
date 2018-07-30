@@ -8,8 +8,10 @@ i_create_course_info = interface +c {
 	get_start_time(): i64;
 	set_end_time(time: i64);
 	get_end_time(): i64;
+
+	static new_create_course_info(): i_create_course_info;
 }
 
 i_course_service = interface +c {
-	
+	create_course(info: i_create_course_info);
 }

@@ -6,6 +6,7 @@ package com.linkedu.core;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public abstract class ICourseService {
+    public abstract void createCourse(ICreateCourseInfo info);
 
     private static final class CppProxy extends ICourseService
     {
@@ -29,5 +30,13 @@ public abstract class ICourseService {
             destroy();
             super.finalize();
         }
+
+        @Override
+        public void createCourse(ICreateCourseInfo info)
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_createCourse(this.nativeRef, info);
+        }
+        private native void native_createCourse(long _nativeRef, ICreateCourseInfo info);
     }
 }

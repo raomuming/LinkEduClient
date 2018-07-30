@@ -65,6 +65,10 @@ class TextViewOnlyCell : UITableViewCell, UITextViewDelegate {
         })
     }
     
+    func getText() -> String {
+        return textView!.text
+    }
+    
     // delegate
     func textViewDidChange(_ textView: UITextView) {
         placeHolderLabel?.isHidden = !textView.text.isEmpty

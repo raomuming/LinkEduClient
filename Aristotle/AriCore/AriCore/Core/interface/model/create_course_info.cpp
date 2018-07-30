@@ -13,6 +13,12 @@
 using Poco::Dynamic::Var;
 
 namespace ari {
+    
+    std::shared_ptr<ICreateCourseInfo> ICreateCourseInfo::newCreateCourseInfo()
+    {
+        return std::make_shared<CreateCourseInfo>();
+    }
+    
     CreateCourseInfo::CreateCourseInfo() : _object(new Object)
     {
     }

@@ -11,15 +11,17 @@ import SnapKit
 
 class CreateCourseViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var startDate: Date?
-    var endDate: Date?
+    var startDate: Date? = Date()
+    var endDate: Date? = Date()
     
     var tableView: UITableView!
+    var courseInfo: AriICreateCourseInfo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "创建课程"
         self.setupSubViews()
+        courseInfo = AriICreateCourseInfo.new()
     }
     
     fileprivate func setupSubViews() {
@@ -36,7 +38,6 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
         tableView.dataSource = self
         tableView.register(TextFieldOnlyCell.self, forCellReuseIdentifier: "course_title")
         tableView.register(TextViewOnlyCell.self, forCellReuseIdentifier: "course_info")
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "course_setting")
         tableView.register(SelectDetailCell.self, forCellReuseIdentifier: "select_detail")
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -53,7 +54,13 @@ class CreateCourseViewController : UIViewController, UITableViewDelegate, UITabl
     }
     
     @objc func doFinishAction() {
-        
+        let titleCell = tableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as! TextFieldOnlyCell
+        courseInfo?.setName(titleCell.getText())
+        let descCell = tableView.cellForRow(at: IndexPath.init(row: 0, section: 1)) as! TextViewOnlyCell
+        courseInfo?.setDescription(descCell.getText())
+        courseInfo?.setStartTime(Int64(startDate!.timeIntervalSince1970))
+        courseInfo?.setEndTime(Int64(endDate!.timeIntervalSince1970))
+        AriServiceFactory.courseService()?.createCourse(courseInfo)
     }
     
     // delegate

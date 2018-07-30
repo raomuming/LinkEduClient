@@ -29,6 +29,10 @@ class TextFieldOnlyCell : UITableViewCell {
         self.initSubViews()
     }
     
+    func getText() -> String  {
+        return textField?.text ?? ""
+    }
+    
     fileprivate func initSubViews() {
         textField = UITextField()
         textField?.font = UIFont.systemFont(ofSize: 20)

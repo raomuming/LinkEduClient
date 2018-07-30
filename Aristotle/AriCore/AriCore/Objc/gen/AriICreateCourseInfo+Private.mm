@@ -82,6 +82,13 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
++ (nullable AriICreateCourseInfo *)newCreateCourseInfo {
+    try {
+        auto objcpp_result_ = ::ari::ICreateCourseInfo::newCreateCourseInfo();
+        return ::djinni_generated::ICreateCourseInfo::fromCpp(objcpp_result_);
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
 namespace djinni_generated {
 
 auto ICreateCourseInfo::toCpp(ObjcType objc) -> CppType

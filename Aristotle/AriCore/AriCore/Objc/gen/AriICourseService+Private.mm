@@ -3,6 +3,7 @@
 
 #import "AriICourseService+Private.h"
 #import "AriICourseService.h"
+#import "AriICreateCourseInfo+Private.h"
 #import "DJICppWrapperCache+Private.h"
 #import "DJIError.h"
 #include <exception>
@@ -27,6 +28,12 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
         _cppRefHandle.assign(cppRef);
     }
     return self;
+}
+
+- (void)createCourse:(nullable AriICreateCourseInfo *)info {
+    try {
+        _cppRefHandle.get()->createCourse(::djinni_generated::ICreateCourseInfo::toCpp(info));
+    } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 namespace djinni_generated {

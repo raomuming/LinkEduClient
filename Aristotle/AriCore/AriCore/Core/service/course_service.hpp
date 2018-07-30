@@ -13,5 +13,6 @@
 namespace ari {
     class CourseService : public ICourseService {
     public:
+        void createCourse(const std::shared_ptr<ICreateCourseInfo> & info) override;
     };
 }

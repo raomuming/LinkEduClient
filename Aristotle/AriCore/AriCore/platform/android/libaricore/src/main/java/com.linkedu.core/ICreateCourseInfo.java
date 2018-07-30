@@ -22,6 +22,8 @@ public abstract class ICreateCourseInfo {
 
     public abstract long getEndTime();
 
+    public static native ICreateCourseInfo newCreateCourseInfo();
+
     private static final class CppProxy extends ICreateCourseInfo
     {
         private final long nativeRef;

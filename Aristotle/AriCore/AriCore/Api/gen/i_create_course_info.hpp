@@ -4,6 +4,7 @@
 #pragma once
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 namespace ari {
@@ -27,6 +28,8 @@ public:
     virtual void setEndTime(int64_t time) = 0;
 
     virtual int64_t getEndTime() = 0;
+
+    static std::shared_ptr<ICreateCourseInfo> newCreateCourseInfo();
 };
 
 }  // namespace ari
